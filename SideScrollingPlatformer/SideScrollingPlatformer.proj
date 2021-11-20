@@ -1,0 +1,6 @@
+{
+    "SideScrollingPlatformer.proj": {
+        "Default Scene": "Scenes/Main.scene",
+        "Description": "A 2D Side Scrolling Platformer"
+    }
+}
