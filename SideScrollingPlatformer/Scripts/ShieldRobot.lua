@@ -19,12 +19,12 @@ end
 -- Called on a fixed interval
 function OnFixedUpdate()
 	if(not backwards and not attacking) then
-		rigidBody:ApplyForce(Vec2.new(40000.0, 0.0))
+		rigidBody:ApplyForce(Vec2.new(700.0, 0.0))
 	elseif (not attacking) then
-		rigidBody:ApplyForce(Vec2.new(-40000.0, 0.0))
+		rigidBody:ApplyForce(Vec2.new(-700.0, 0.0))
 	end
 
-	if(count > 200 and not attacking) then
+	if(count > 500 and not attacking) then
 		attacking = true
 		sprite:SelectAnimation("Unnamed Animation (4)")
 	end
