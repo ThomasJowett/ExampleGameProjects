@@ -1,0 +1,24 @@
+<Scene EngineVersion="1">
+    <Gravity X="0" Y="-9.8100004"/>
+    <Entity Name="MonteCarlo Manager" ID="1093810342638130295">
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+        </Transform>
+        <LuaScript Filepath="Scripts/MonteCarlo.lua"/>
+    </Entity>
+    <Entity Name="Background" ID="4655046987303227018">
+        <Transform>
+            <Position X="0.5" Y="0.5" Z="-0.40000001"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+        </Transform>
+        <Camera Primary="true" FixedAspectRatio="false">
+            <SceneCamera ProjectionType="1" OrthoSize="1.1" OrthoNear="-1" OrthoFar="1" PerspectiveNear="1" PerspectiveFar="1000" FOV="1.5707964" AspectRatio="1.8535825"/>
+        </Camera>
+        <Sprite TilingFactor="1">
+            <Tint R="0" G="0" B="0" A="1"/>
+        </Sprite>
+    </Entity>
+</Scene>

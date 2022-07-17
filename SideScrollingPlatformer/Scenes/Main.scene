@@ -1,6 +1,6 @@
 <Scene Name="Main" EngineVersion="1">
     <Gravity X="0" Y="-98.099998"/>
-    <Entity Name="Robot" ID="12345743649040313292">
+    <Entity Name="Robot" ID="2793125267480134794">
         <Transform>
             <Position X="10.21392" Y="-11.68692" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
@@ -15,8 +15,10 @@
             <Offset X="0" Y="-0.40000001"/>
             <Size X="0.1" Y="0.40000001"/>
         </BoxCollider2D>
+        <BehaviourTree/>
+        <StateMachine/>
         <LuaScript Filepath="Scripts/ShieldRobot.lua"/>
-        <Entity Name="Camera" ID="11325656284834352192">
+        <Entity Name="Camera" ID="5635653661799614040">
             <Transform>
                 <Position X="0" Y="0" Z="0"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -27,7 +29,7 @@
             </Camera>
         </Entity>
     </Entity>
-    <Entity Name="Foreground" ID="9463033055960845296">
+    <Entity Name="Foreground" ID="16957127900014129807">
         <Transform>
             <Position X="0" Y="0" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
@@ -80,7 +82,7 @@
             <Vertex X="3.5" Y="-6.0999999"/>
         </PolygonCollider2D>
     </Entity>
-    <Entity Name="Background" ID="12000314566026634177">
+    <Entity Name="Background" ID="5888199770726319589">
         <Transform>
             <Position X="0" Y="0" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
@@ -119,13 +121,13 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 <Tint R="1" G="1" B="1" A="1"/></Tilemap>
     </Entity>
-    <Entity Name="Backgrounds" ID="8419979688768770316">
+    <Entity Name="Backgrounds" ID="16354422760006623662">
         <Transform>
             <Position X="28.051401" Y="-3.5685358" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="0.19600001" Y="0.19600001" Z="0.19600001"/>
         </Transform>
-        <Entity Name="Background1" ID="7287806360454678947">
+        <Entity Name="Background1" ID="17351689832759365975">
             <Transform>
                 <Position X="0" Y="0" Z="-0.60000002"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -136,7 +138,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background2" ID="10781174332795861791">
+        <Entity Name="Background2" ID="362676237786282099">
             <Transform>
                 <Position X="0" Y="0" Z="-0.5"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -147,7 +149,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background3" ID="14225610649682391599">
+        <Entity Name="Background3" ID="3769837753178948812">
             <Transform>
                 <Position X="0" Y="0" Z="-0.40000001"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -158,7 +160,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background4" ID="14547285184554547805">
+        <Entity Name="Background4" ID="10852102181184377465">
             <Transform>
                 <Position X="0" Y="0" Z="-0.30000001"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -169,7 +171,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background5" ID="1967086316196960154">
+        <Entity Name="Background5" ID="14172438115560305188">
             <Transform>
                 <Position X="0" Y="0" Z="-0.2"/>
                 <Rotation X="0" Y="0" Z="0"/>
