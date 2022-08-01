@@ -1,0 +1,7 @@
+<Tileset EngineVersion="1" TileWidth="32" TileHeight="32">
+    <Texture Filepath="Textures/Sprites/Dust.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Jump" StartFrame="4" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Land" StartFrame="8" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Slide" StartFrame="12" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Stop" StartFrame="0" FrameCount="4" HoldTime="0.1"/>
+</Tileset>

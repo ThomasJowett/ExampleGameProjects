@@ -26,14 +26,14 @@ function OnFixedUpdate()
 
 	if(count > 500 and not attacking) then
 		attacking = true
-		sprite:SelectAnimation("Unnamed Animation (4)")
+		sprite:SelectAnimation("Attack")
 	end
 
 	if(count > 700) then
 		count = 0
 		backwards = not backwards
 		transform.Scale.x = -transform.Scale.x
-		sprite:SelectAnimation("Unnamed Animation (5)")
+		sprite:SelectAnimation("Walk")
 		attacking = false
 	else
 		count = count + 1
@@ -43,5 +43,6 @@ end
 function OnDestroy()
 
 end
+
 
 

@@ -1,0 +1,3 @@
+<Tileset EngineVersion="1" TileWidth="16" TileHeight="16">
+    <Texture Filepath="Textures/Tilesets/jungle tileset.png" FilterMethod="1" WrapMethod="2"/>
+</Tileset>

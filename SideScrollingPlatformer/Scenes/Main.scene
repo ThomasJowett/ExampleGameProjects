@@ -1,13 +1,24 @@
-<Scene Name="Main" EngineVersion="1">
+<Scene EngineVersion="1">
     <Gravity X="0" Y="-98.099998"/>
-    <Entity Name="Robot" ID="2793125267480134794">
+    <Entity Name="Animated Sprite" ID="5258292573587651085">
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="100" Y="80" Z="1"/>
+        </Transform>
+        <AnimatedSprite CurrentAnimation="Idle">
+            <Tileset Filepath="Textures/Sprites/ProtoTypeHero.tileset"/>
+            <Tint R="1" G="1" B="1" A="1"/>
+        </AnimatedSprite>
+    </Entity>
+    <Entity Name="Robot" ID="16346200114544617524">
         <Transform>
             <Position X="10.21392" Y="-11.68692" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="12.960001" Y="4.4639997" Z="0.37252808"/>
         </Transform>
-        <AnimatedSprite CurrentAnimation="Unnamed Animation (5)">
-            <Tileset Filepath="Textures/Sprites/ShieldRobot.tsx"/>
+        <AnimatedSprite CurrentAnimation="Walk">
+            <Tileset Filepath="Textures/Sprites/ShieldRobot.tileset"/>
             <Tint R="1" G="1" B="1" A="1"/>
         </AnimatedSprite>
         <RigidBody2D BodyType="2" FixedRotation="true" GravityScale="1" AngularDamping="0" LinearDamping="1"/>
@@ -18,7 +29,7 @@
         <BehaviourTree/>
         <StateMachine/>
         <LuaScript Filepath="Scripts/ShieldRobot.lua"/>
-        <Entity Name="Camera" ID="5635653661799614040">
+        <Entity Name="Camera" ID="4340319181813041765">
             <Transform>
                 <Position X="0" Y="0" Z="0"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -29,13 +40,13 @@
             </Camera>
         </Entity>
     </Entity>
-    <Entity Name="Foreground" ID="16957127900014129807">
+    <Entity Name="Foreground" ID="11435771561495108356">
         <Transform>
             <Position X="0" Y="0" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="2" Y="2" Z="2"/>
         </Transform>
-        <Tilemap Filepath="Tilemaps/Jungle.tsx" TilesWide="50" TilesHigh="30" Orientation="Orthogonal">
+        <Tilemap Filepath="Tilemaps/Jungle.tileset" TilesWide="50" TilesHigh="30" Orientation="Orthogonal">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -82,13 +93,13 @@
             <Vertex X="3.5" Y="-6.0999999"/>
         </PolygonCollider2D>
     </Entity>
-    <Entity Name="Background" ID="5888199770726319589">
+    <Entity Name="Background" ID="15941814370515731650">
         <Transform>
             <Position X="0" Y="0" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="2" Y="2" Z="2"/>
         </Transform>
-        <Tilemap Filepath="Tilemaps/Jungle.tsx" TilesWide="50" TilesHigh="30" Orientation="Orthogonal">
+        <Tilemap Filepath="Tilemaps/Jungle.tileset" TilesWide="50" TilesHigh="30" Orientation="Orthogonal">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -121,13 +132,13 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 <Tint R="1" G="1" B="1" A="1"/></Tilemap>
     </Entity>
-    <Entity Name="Backgrounds" ID="16354422760006623662">
+    <Entity Name="Backgrounds" ID="5616557251277192608">
         <Transform>
             <Position X="28.051401" Y="-3.5685358" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="0.19600001" Y="0.19600001" Z="0.19600001"/>
         </Transform>
-        <Entity Name="Background1" ID="17351689832759365975">
+        <Entity Name="Background1" ID="3087630040565430430">
             <Transform>
                 <Position X="0" Y="0" Z="-0.60000002"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -138,7 +149,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background2" ID="362676237786282099">
+        <Entity Name="Background2" ID="5490914257461606772">
             <Transform>
                 <Position X="0" Y="0" Z="-0.5"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -149,7 +160,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background3" ID="3769837753178948812">
+        <Entity Name="Background3" ID="11268327946547951620">
             <Transform>
                 <Position X="0" Y="0" Z="-0.40000001"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -160,7 +171,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background4" ID="10852102181184377465">
+        <Entity Name="Background4" ID="43753249182017098">
             <Transform>
                 <Position X="0" Y="0" Z="-0.30000001"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -171,7 +182,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background5" ID="14172438115560305188">
+        <Entity Name="Background5" ID="18376051451116348034">
             <Transform>
                 <Position X="0" Y="0" Z="-0.2"/>
                 <Rotation X="0" Y="0" Z="0"/>

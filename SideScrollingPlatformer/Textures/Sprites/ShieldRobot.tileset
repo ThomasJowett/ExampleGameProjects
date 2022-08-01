@@ -1,0 +1,5 @@
+<Tileset EngineVersion="1" TileWidth="90" TileHeight="31">
+    <Texture Filepath="Textures/Sprites/Shield Robot.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Attack" StartFrame="29" FrameCount="11" HoldTime="0.1"/>
+    <Animation Name="Walk" StartFrame="20" FrameCount="8" HoldTime="0.1"/>
+</Tileset>

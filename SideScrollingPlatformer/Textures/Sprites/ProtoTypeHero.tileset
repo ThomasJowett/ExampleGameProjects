@@ -1,0 +1,10 @@
+<Tileset EngineVersion="1" TileWidth="100" TileHeight="80">
+    <Texture Filepath="Textures/Sprites/PrototypeHero_noSword.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Idle" StartFrame="0" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Jump End" StartFrame="23" FrameCount="1" HoldTime="0.1"/>
+    <Animation Name="Jump Loop" StartFrame="21" FrameCount="2" HoldTime="0.1"/>
+    <Animation Name="Jump Start" StartFrame="19" FrameCount="2" HoldTime="0.1"/>
+    <Animation Name="Run" StartFrame="8" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Run End" StartFrame="16" FrameCount="3" HoldTime="0.1"/>
+    <Animation Name="Run Start" StartFrame="6" FrameCount="2" HoldTime="0.1"/>
+</Tileset>

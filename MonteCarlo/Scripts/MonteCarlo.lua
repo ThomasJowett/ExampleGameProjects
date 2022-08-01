@@ -2,6 +2,7 @@ monteCarloRuns = 1000
 local redPositions = 0
 local bluePositions = 0
 local entities = {}
+local numEntities = 0
 
 -- Called when entity is created
 function OnCreate()
@@ -12,18 +13,17 @@ function OnUpdate(deltaTime)
 	local pi = 4 * redPositions / (bluePositions + redPositions)
 
 	--TODO: display this as text on the screen
-	Log.Info(tostring(pi))
+	Log.Info(tostring(pi) .. "	out by	" .. tostring(math.abs(math.pi - pi)))
 end
 
 -- Called on a fixed interval
 function OnFixedUpdate()
-	if(redPositions + bluePositions > monteCarloRuns) then
+	if(numEntities > monteCarloRuns) then
 		for key, entity in pairs(entities) do
 			entity:Destroy()
 		end
-		redPositions = 0
-		bluePositions = 0
 		entities = {}
+		numEntities = 0
 	end
 
 	local position = Vec2.new(math.random(), math.random())
@@ -44,6 +44,7 @@ function OnFixedUpdate()
 	local transform = entity:GetTransformComponent()
 	transform.Position = Vec3.new(position.x, position.y, 0.1)
 	entity:GetTransformComponent().Scale = Vec3.new(0.01, 0.01, 0.01)
+	numEntities = numEntities + 1
 end
 -- Called when entity is destroyed
 function OnDestroy()
