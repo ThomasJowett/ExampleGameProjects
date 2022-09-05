@@ -7,9 +7,9 @@ local attacking = false
 
 -- Called when entity is created
 function OnCreate()
-	rigidBody = Entity:GetOrAddRigidBody2DComponent()
-	transform = Entity:GetTransformComponent()
-	sprite = Entity:GetAnimatedSpriteComponent()
+	rigidBody = CurrentEntity:GetOrAddRigidBody2DComponent()
+	transform = CurrentEntity:GetTransformComponent()
+	sprite = CurrentEntity:GetAnimatedSpriteComponent()
 end
 
 -- Called once per frame
@@ -43,6 +43,3 @@ end
 function OnDestroy()
 
 end
-
-
-

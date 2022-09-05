@@ -1,6 +1,6 @@
 <Scene EngineVersion="1">
     <Gravity X="0" Y="-98.099998"/>
-    <Entity Name="Robot" ID="16346200114544617524">
+    <Entity Name="Robot" ID="8951438336737127648">
         <Transform>
             <Position X="10.21392" Y="-11.68692" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
@@ -11,14 +11,15 @@
             <Tint R="1" G="1" B="1" A="1"/>
         </AnimatedSprite>
         <RigidBody2D BodyType="2" FixedRotation="true" GravityScale="1" AngularDamping="0" LinearDamping="1"/>
-        <BoxCollider2D Density="1" Friction="0.991" Restitution="0">
+        <BoxCollider2D>
+            <PhysicsMaterial Filepath="Robot.physicsmaterial"/>
             <Offset X="0" Y="-0.40000001"/>
             <Size X="0.1" Y="0.40000001"/>
         </BoxCollider2D>
         <BehaviourTree/>
         <StateMachine/>
         <LuaScript Filepath="Scripts/ShieldRobot.lua"/>
-        <Entity Name="Camera" ID="4340319181813041765">
+        <Entity Name="Camera" ID="13320981017963236083">
             <Transform>
                 <Position X="0" Y="0" Z="0"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -29,7 +30,7 @@
             </Camera>
         </Entity>
     </Entity>
-    <Entity Name="Foreground" ID="11435771561495108356">
+    <Entity Name="Foreground" ID="15077536699068814474">
         <Transform>
             <Position X="0" Y="0" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
@@ -68,7 +69,7 @@
 199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199,199
 <Tint R="1" G="1" B="1" A="1"/></Tilemap>
         <RigidBody2D BodyType="0" FixedRotation="false" GravityScale="1" AngularDamping="0" LinearDamping="0"/>
-        <PolygonCollider2D Density="1" Friction="0.5" Restitution="0">
+        <PolygonCollider2D>
             <Offset X="0" Y="0"/>
             <Vertex X="0" Y="-6"/>
             <Vertex X="-0.050999999" Y="-11.191"/>
@@ -82,7 +83,7 @@
             <Vertex X="3.5" Y="-6.0999999"/>
         </PolygonCollider2D>
     </Entity>
-    <Entity Name="Background" ID="15941814370515731650">
+    <Entity Name="Background" ID="724889334476248797">
         <Transform>
             <Position X="0" Y="0" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
@@ -121,13 +122,13 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 <Tint R="1" G="1" B="1" A="1"/></Tilemap>
     </Entity>
-    <Entity Name="Backgrounds" ID="5616557251277192608">
+    <Entity Name="Backgrounds" ID="730920455795987194">
         <Transform>
             <Position X="28.051401" Y="-3.5685358" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="0.19600001" Y="0.19600001" Z="0.19600001"/>
         </Transform>
-        <Entity Name="Background1" ID="3087630040565430430">
+        <Entity Name="Background1" ID="11287827793425150790">
             <Transform>
                 <Position X="0" Y="0" Z="-0.60000002"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -138,7 +139,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background2" ID="5490914257461606772">
+        <Entity Name="Background2" ID="116128870351849767">
             <Transform>
                 <Position X="0" Y="0" Z="-0.5"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -149,7 +150,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background3" ID="11268327946547951620">
+        <Entity Name="Background3" ID="10113511056366016734">
             <Transform>
                 <Position X="0" Y="0" Z="-0.40000001"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -160,7 +161,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background4" ID="43753249182017098">
+        <Entity Name="Background4" ID="16115658355334687850">
             <Transform>
                 <Position X="0" Y="0" Z="-0.30000001"/>
                 <Rotation X="0" Y="0" Z="0"/>
@@ -171,7 +172,7 @@
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background5" ID="18376051451116348034">
+        <Entity Name="Background5" ID="10005630869759699529">
             <Transform>
                 <Position X="0" Y="0" Z="-0.2"/>
                 <Rotation X="0" Y="0" Z="0"/>
