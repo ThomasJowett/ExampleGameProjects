@@ -1,0 +1,4 @@
+<Tileset EngineVersion="1" TileWidth="36" TileHeight="36">
+    <Texture Filepath="SpriteSheets/person-sprite-sheet.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Run" StartFrame="0" FrameCount="9" HoldTime="0.1"/>
+</Tileset>

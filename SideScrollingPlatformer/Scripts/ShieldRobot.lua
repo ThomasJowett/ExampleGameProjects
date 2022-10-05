@@ -19,9 +19,9 @@ end
 -- Called on a fixed interval
 function OnFixedUpdate()
 	if(not backwards and not attacking) then
-		rigidBody:ApplyForce(Vec2.new(700.0, 0.0))
+		rigidBody:ApplyForce(Vec2.new(70.0, 0.0))
 	elseif (not attacking) then
-		rigidBody:ApplyForce(Vec2.new(-700.0, 0.0))
+		rigidBody:ApplyForce(Vec2.new(-70.0, 0.0))
 	end
 
 	if(count > 500 and not attacking) then
@@ -43,3 +43,4 @@ end
 function OnDestroy()
 
 end
+

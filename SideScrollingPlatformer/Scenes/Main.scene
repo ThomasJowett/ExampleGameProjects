@@ -1,10 +1,30 @@
 <Scene EngineVersion="1">
     <Gravity X="0" Y="-98.099998"/>
-    <Entity Name="Robot" ID="8951438336737127648">
+    <Entity Name="Player" ID="13978433816778790297">
         <Transform>
-            <Position X="10.21392" Y="-11.68692" Z="0"/>
+            <Position X="9.6199207" Y="-5.9024673" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
-            <Scale X="12.960001" Y="4.4639997" Z="0.37252808"/>
+            <Scale X="3.125" Y="2.3125" Z="0.12740004"/>
+        </Transform>
+        <Camera Primary="true" FixedAspectRatio="false">
+            <SceneCamera ProjectionType="1" OrthoSize="10" OrthoNear="-1" OrthoFar="1" PerspectiveNear="1" PerspectiveFar="1000" FOV="1.5707964" AspectRatio="1.8535825"/>
+        </Camera>
+        <AnimatedSprite CurrentAnimation="Idle">
+            <Tileset Filepath="Textures/Sprites/Character.tileset"/>
+            <Tint R="1" G="1" B="1" A="1"/>
+        </AnimatedSprite>
+        <RigidBody2D BodyType="2" FixedRotation="true" GravityScale="1" AngularDamping="0" LinearDamping="0"/>
+        <CapsuleCollider2D Direction="0" Radius="0.1" Height="0.80000001">
+            <PhysicsMaterial Filepath="Player.physicsmaterial"/>
+            <Offset X="0" Y="-0.1"/>
+        </CapsuleCollider2D>
+        <LuaScript Filepath="Scripts/PlayerController.lua"/>
+    </Entity>
+    <Entity Name="Robot" ID="6140303747334149383">
+        <Transform>
+            <Position X="5.4720721" Y="-7.3454652" Z="0.1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="5.625" Y="1.9375" Z="0.37252808"/>
         </Transform>
         <AnimatedSprite CurrentAnimation="Walk">
             <Tileset Filepath="Textures/Sprites/ShieldRobot.tileset"/>
@@ -13,28 +33,18 @@
         <RigidBody2D BodyType="2" FixedRotation="true" GravityScale="1" AngularDamping="0" LinearDamping="1"/>
         <BoxCollider2D>
             <PhysicsMaterial Filepath="Robot.physicsmaterial"/>
-            <Offset X="0" Y="-0.40000001"/>
+            <Offset X="0" Y="-0.2"/>
             <Size X="0.1" Y="0.40000001"/>
         </BoxCollider2D>
         <BehaviourTree/>
         <StateMachine/>
         <LuaScript Filepath="Scripts/ShieldRobot.lua"/>
-        <Entity Name="Camera" ID="13320981017963236083">
-            <Transform>
-                <Position X="0" Y="0" Z="0"/>
-                <Rotation X="0" Y="0" Z="0"/>
-                <Scale X="1" Y="1" Z="1"/>
-            </Transform>
-            <Camera Primary="true" FixedAspectRatio="false">
-                <SceneCamera ProjectionType="1" OrthoSize="16" OrthoNear="-1" OrthoFar="1" PerspectiveNear="1" PerspectiveFar="1000" FOV="1.5707964" AspectRatio="1.8535825"/>
-            </Camera>
-        </Entity>
     </Entity>
-    <Entity Name="Foreground" ID="15077536699068814474">
+    <Entity Name="Foreground" ID="8638527300729476176">
         <Transform>
-            <Position X="0" Y="0" Z="0"/>
+            <Position X="0" Y="0" Z="-0.0099999998"/>
             <Rotation X="0" Y="0" Z="0"/>
-            <Scale X="2" Y="2" Z="2"/>
+            <Scale X="1" Y="1" Z="1"/>
         </Transform>
         <Tilemap Filepath="Tilemaps/Jungle.tileset" TilesWide="50" TilesHigh="30" Orientation="Orthogonal">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -83,11 +93,11 @@
             <Vertex X="3.5" Y="-6.0999999"/>
         </PolygonCollider2D>
     </Entity>
-    <Entity Name="Background" ID="724889334476248797">
+    <Entity Name="Background" ID="7443418270943996708">
         <Transform>
-            <Position X="0" Y="0" Z="0"/>
+            <Position X="0" Y="0" Z="-0.1"/>
             <Rotation X="0" Y="0" Z="0"/>
-            <Scale X="2" Y="2" Z="2"/>
+            <Scale X="1" Y="1" Z="1"/>
         </Transform>
         <Tilemap Filepath="Tilemaps/Jungle.tileset" TilesWide="50" TilesHigh="30" Orientation="Orthogonal">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -122,61 +132,61 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 <Tint R="1" G="1" B="1" A="1"/></Tilemap>
     </Entity>
-    <Entity Name="Backgrounds" ID="730920455795987194">
+    <Entity Name="Backgrounds" ID="11595195242807752804">
         <Transform>
-            <Position X="28.051401" Y="-3.5685358" Z="0"/>
+            <Position X="0" Y="0" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
-            <Scale X="0.19600001" Y="0.19600001" Z="0.19600001"/>
+            <Scale X="1" Y="1" Z="1"/>
         </Transform>
-        <Entity Name="Background1" ID="11287827793425150790">
+        <Entity Name="Background1" ID="342199383806946007">
             <Transform>
                 <Position X="0" Y="0" Z="-0.60000002"/>
                 <Rotation X="0" Y="0" Z="0"/>
-                <Scale X="384" Y="216" Z="-206.36"/>
+                <Scale X="24" Y="13.5" Z="-206.36"/>
             </Transform>
             <Sprite TilingFactor="1">
                 <Texture Filepath="Textures/Backgrounds/plx-1.png" FilterMethod="1" WrapMethod="2"/>
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background2" ID="116128870351849767">
+        <Entity Name="Background2" ID="476291527550161509">
             <Transform>
                 <Position X="0" Y="0" Z="-0.5"/>
                 <Rotation X="0" Y="0" Z="0"/>
-                <Scale X="384" Y="216" Z="1"/>
+                <Scale X="24" Y="13.5" Z="1"/>
             </Transform>
             <Sprite TilingFactor="1">
                 <Texture Filepath="Textures/Backgrounds/plx-2.png" FilterMethod="1" WrapMethod="2"/>
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background3" ID="10113511056366016734">
+        <Entity Name="Background3" ID="3123184152671612229">
             <Transform>
                 <Position X="0" Y="0" Z="-0.40000001"/>
                 <Rotation X="0" Y="0" Z="0"/>
-                <Scale X="384" Y="216" Z="1"/>
+                <Scale X="24" Y="13.5" Z="1"/>
             </Transform>
             <Sprite TilingFactor="1">
                 <Texture Filepath="Textures/Backgrounds/plx-3.png" FilterMethod="1" WrapMethod="2"/>
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background4" ID="16115658355334687850">
+        <Entity Name="Background4" ID="7085429014759432243">
             <Transform>
                 <Position X="0" Y="0" Z="-0.30000001"/>
                 <Rotation X="0" Y="0" Z="0"/>
-                <Scale X="384" Y="216" Z="1"/>
+                <Scale X="24" Y="13.5" Z="1"/>
             </Transform>
             <Sprite TilingFactor="1">
                 <Texture Filepath="Textures/Backgrounds/plx-4.png" FilterMethod="1" WrapMethod="2"/>
                 <Tint R="1" G="1" B="1" A="1"/>
             </Sprite>
         </Entity>
-        <Entity Name="Background5" ID="10005630869759699529">
+        <Entity Name="Background5" ID="8768172109531965355">
             <Transform>
                 <Position X="0" Y="0" Z="-0.2"/>
                 <Rotation X="0" Y="0" Z="0"/>
-                <Scale X="384" Y="216" Z="1"/>
+                <Scale X="24" Y="13.5" Z="1"/>
             </Transform>
             <Sprite TilingFactor="1">
                 <Texture Filepath="Textures/Backgrounds/plx-5.png" FilterMethod="1" WrapMethod="2"/>
