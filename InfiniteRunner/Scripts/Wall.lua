@@ -12,7 +12,7 @@ function OnUpdate(deltaTime)
 	if cameraSize ~= size then
 		local cameraSizeX = camera.Camera:GetOrthoSize() * camera.Camera:GetAspectRatio()
 		local cameraSizeY = camera.Camera:GetOrthoSize()
-		plane:SetPlane(cameraSizeX / 2, cameraSizeY/2, 4, 4, cameraSizeX /2, cameraSizeY/2)
+		plane:SetPlane(cameraSizeX, cameraSizeY, 4, 4, cameraSizeX, cameraSizeY)
 		size = cameraSizeX
 	end
 end
@@ -24,3 +24,4 @@ end
 function OnDestroy()
 
 end
+
