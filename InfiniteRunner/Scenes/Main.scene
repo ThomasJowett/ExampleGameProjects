@@ -1,24 +1,18 @@
 <Scene EngineVersion="1">
     <Gravity X="0" Y="-9.8100004"/>
-    <Entity Name="Wall" ID="75423502962237038">
+    <Entity Name="Spawner" ID="10842461747357181367">
         <Transform>
-            <Position X="0" Y="0" Z="-0.5"/>
-            <Rotation X="1.5707964" Y="0" Z="0"/>
+            <Position X="0" Y="0" Z="0"/>
+            <Rotation X="0" Y="0" Z="0"/>
             <Scale X="1" Y="1" Z="1"/>
         </Transform>
-        <StaticMesh>
-            <Mesh/>
-            <Material Filepath="Materials/Wall.material"/>
-        </StaticMesh>
-        <Primitive Type="2">
-            <Plane Width="1" Length="1" WidthLines="2" LengthLines="2" TileU="1" TileV="1"/>
-        </Primitive>
+        <LuaScript Filepath="Scripts/Spawner.lua"/>
     </Entity>
-    <Entity Name="Floor" ID="7204259677289750325">
+    <Entity Name="Floor" ID="4523489954062349260">
         <Transform>
-            <Position X="0" Y="-2" Z="0.1"/>
+            <Position X="0" Y="-3" Z="0.10000006"/>
             <Rotation X="1.5707964" Y="0" Z="0"/>
-            <Scale X="1" Y="1" Z="1"/>
+            <Scale X="4" Y="4" Z="4"/>
         </Transform>
         <StaticMesh>
             <Mesh/>
@@ -32,20 +26,26 @@
             <Offset X="0" Y="0"/>
             <Size X="0.5" Y="0.5"/>
         </BoxCollider2D>
+        <LuaScript Filepath="Scripts/Floor.lua"/>
     </Entity>
-    <Entity Name="Camera" ID="9734173198422430928">
+    <Entity Name="Wall" ID="3824128588513349523">
         <Transform>
-            <Position X="0" Y="0" Z="0"/>
-            <Rotation X="0" Y="0" Z="0"/>
-            <Scale X="1" Y="1" Z="1"/>
+            <Position X="0" Y="0" Z="-0.5"/>
+            <Rotation X="1.5707964" Y="0" Z="0"/>
+            <Scale X="2" Y="2" Z="2"/>
         </Transform>
-        <Camera Primary="true" FixedAspectRatio="false">
-            <SceneCamera ProjectionType="1" OrthoSize="10" OrthoNear="-1" OrthoFar="1" PerspectiveNear="1" PerspectiveFar="1000" FOV="1.5707964" AspectRatio="1.8535825"/>
-        </Camera>
+        <StaticMesh>
+            <Mesh/>
+            <Material Filepath="Materials/Wall.material"/>
+        </StaticMesh>
+        <Primitive Type="2">
+            <Plane Width="1" Length="1" WidthLines="2" LengthLines="2" TileU="1" TileV="1"/>
+        </Primitive>
+        <LuaScript Filepath="Scripts/Wall.lua"/>
     </Entity>
-    <Entity Name="Player" ID="8658636669674638739">
+    <Entity Name="Player" ID="15116204643718136709">
         <Transform>
-            <Position X="0" Y="0" Z="0"/>
+            <Position X="-5.3628883" Y="1.5789219" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="2.25" Y="2.25" Z="1"/>
         </Transform>
@@ -58,5 +58,15 @@
             <Offset X="0" Y="0"/>
             <Size X="0.30000001" Y="0.5"/>
         </BoxCollider2D>
+    </Entity>
+    <Entity Name="Camera" ID="10113630780356128673">
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+        </Transform>
+        <Camera Primary="true" FixedAspectRatio="false">
+            <SceneCamera ProjectionType="1" OrthoSize="8" OrthoNear="-1" OrthoFar="1" PerspectiveNear="1" PerspectiveFar="1000" FOV="1.5707964"/>
+        </Camera>
     </Entity>
 </Scene>

@@ -1,0 +1,4 @@
+<Tileset EngineVersion="1" TileWidth="36" TileHeight="36">
+    <Texture Filepath="SpriteSheets/zombie-sprite-sheet.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Walk" StartFrame="0" FrameCount="6" HoldTime="0.1"/>
+</Tileset>
