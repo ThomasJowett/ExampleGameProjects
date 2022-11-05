@@ -10,15 +10,12 @@
     </Entity>
     <Entity Name="Floor" ID="4523489954062349260">
         <Transform>
-            <Position X="0" Y="-3" Z="0.10000006"/>
+            <Position X="0" Y="-1.5" Z="0.099999972"/>
             <Rotation X="1.5707964" Y="0" Z="0"/>
-            <Scale X="4" Y="4" Z="4"/>
+            <Scale X="2" Y="2" Z="2"/>
         </Transform>
-        <StaticMesh>
-            <Mesh/>
-            <Material Filepath="Materials/Floor.material"/>
-        </StaticMesh>
         <Primitive Type="2">
+            <Material Filepath="Materials/Floor.material"/>
             <Plane Width="1" Length="1" WidthLines="2" LengthLines="2" TileU="1" TileV="1"/>
         </Primitive>
         <RigidBody2D BodyType="0" FixedRotation="false" GravityScale="1" AngularDamping="0" LinearDamping="0"/>
@@ -32,22 +29,19 @@
         <Transform>
             <Position X="0" Y="0" Z="-0.5"/>
             <Rotation X="1.5707964" Y="0" Z="0"/>
-            <Scale X="2" Y="2" Z="2"/>
+            <Scale X="1" Y="1" Z="1"/>
         </Transform>
-        <StaticMesh>
-            <Mesh/>
-            <Material Filepath="Materials/Wall.material"/>
-        </StaticMesh>
         <Primitive Type="2">
+            <Material Filepath="Materials/Wall.material"/>
             <Plane Width="1" Length="1" WidthLines="2" LengthLines="2" TileU="1" TileV="1"/>
         </Primitive>
         <LuaScript Filepath="Scripts/Wall.lua"/>
     </Entity>
     <Entity Name="Player" ID="15116204643718136709">
         <Transform>
-            <Position X="-5.3628883" Y="1.5789219" Z="0"/>
+            <Position X="-0.86288834" Y="0.57892191" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
-            <Scale X="2.25" Y="2.25" Z="1"/>
+            <Scale X="1.125" Y="1.125" Z="1"/>
         </Transform>
         <AnimatedSprite CurrentAnimation="Run">
             <Tileset Filepath="SpriteSheets/person.tileset"/>
@@ -66,7 +60,7 @@
             <Scale X="1" Y="1" Z="1"/>
         </Transform>
         <Camera Primary="true" FixedAspectRatio="false">
-            <SceneCamera ProjectionType="1" OrthoSize="8" OrthoNear="-1" OrthoFar="1" PerspectiveNear="1" PerspectiveFar="1000" FOV="1.5707964"/>
+            <SceneCamera ProjectionType="1" OrthoSize="4" OrthoNear="-1" OrthoFar="1" PerspectiveNear="1" PerspectiveFar="1000" FOV="1.5707964"/>
         </Camera>
     </Entity>
 </Scene>
