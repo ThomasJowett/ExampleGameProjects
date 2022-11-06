@@ -2,7 +2,7 @@
     <Gravity X="0" Y="-9.8100004"/>
     <Entity Name="Spawner" ID="10842461747357181367">
         <Transform>
-            <Position X="0" Y="0" Z="0"/>
+            <Position X="5.2945843" Y="-0.60000002" Z="1"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="1" Y="1" Z="1"/>
         </Transform>
@@ -20,7 +20,7 @@
         </Primitive>
         <RigidBody2D BodyType="0" FixedRotation="false" GravityScale="1" AngularDamping="0" LinearDamping="0"/>
         <BoxCollider2D>
-            <Offset X="0" Y="0"/>
+            <Offset X="0" Y="-0.1"/>
             <Size X="0.5" Y="0.5"/>
         </BoxCollider2D>
         <LuaScript Filepath="Scripts/Floor.lua"/>
@@ -39,7 +39,7 @@
     </Entity>
     <Entity Name="Player" ID="15116204643718136709">
         <Transform>
-            <Position X="-0.86288834" Y="0.57892191" Z="0"/>
+            <Position X="0" Y="0.60000002" Z="1"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="1.125" Y="1.125" Z="1"/>
         </Transform>
@@ -47,7 +47,7 @@
             <Tileset Filepath="SpriteSheets/person.tileset"/>
             <Tint R="1" G="1" B="1" A="1"/>
         </AnimatedSprite>
-        <RigidBody2D BodyType="2" FixedRotation="false" GravityScale="1" AngularDamping="0" LinearDamping="0"/>
+        <RigidBody2D BodyType="2" FixedRotation="true" GravityScale="1" AngularDamping="0" LinearDamping="0"/>
         <BoxCollider2D>
             <Offset X="0" Y="0"/>
             <Size X="0.30000001" Y="0.5"/>

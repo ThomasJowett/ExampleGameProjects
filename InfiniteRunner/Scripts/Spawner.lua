@@ -1,37 +1,28 @@
 local timer = 0.0
-function SpawnItem()
+local spawnLocation = nil
 
-	local obstacle = CurrentScene:CreateEntity("Obstacle")
-	rigidBody = obstacle:AddRigidBody2DComponent()
-	--rigidBody:SetLinearVelocity(Vec2.new(-1,0))
-	local sprite = obstacle:AddSpriteComponent()
-	sprite.Texture = AssetManager.GetTexture("Sprites/crate.png")
+local obstacles = {}
 
-end
 -- Called when entity is created
 function OnCreate()
+	local transform = CurrentEntity:GetTransformComponent()
+	spawnLocation = transform.Position;
+	Log.Debug(tostring(spawnLocation))
 
+	obstacles[0] = LoadScene("Scenes/Obstacle.scene")
+	obstacles[1] = LoadScene("Scenes/Chair.scene")
 end
 
 -- Called once per frame
 function OnUpdate(deltaTime)
 	timer = timer + deltaTime;
-	if timer > 1.0 then
-		SpawnItem()
-		Log.Debug("Spawned New obstacle")
+	if timer > math.random(1.0, 2.0) then
+		local index = math.random(0, 1)
+		CurrentScene:InstantiateScene(obstacles[index], spawnLocation)
 		timer = 0.0
-
 	end
 end
 -- Called on a fixed interval
 function OnFixedUpdate()
 
 end
--- Called when entity is destroyed
-function OnDestroy()
-
-end
-
-
-
-
