@@ -14,8 +14,6 @@ end
 function OnFixedUpdate()
 	rigidBody2DComp:SetLinearVelocity(velocity)
 
-	Log.Debug(tostring(camera.Camera:GetOrthoSize()))
-
 	local offscreen = camera.Camera:GetOrthoSize() / 2 * -1
 	
 	if transform.Position.x < offscreen then

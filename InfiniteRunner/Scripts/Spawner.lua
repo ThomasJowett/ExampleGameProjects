@@ -7,7 +7,6 @@ local obstacles = {}
 function OnCreate()
 	local transform = CurrentEntity:GetTransformComponent()
 	spawnLocation = transform.Position;
-	Log.Debug(tostring(spawnLocation))
 
 	obstacles[0] = LoadScene("Scenes/Obstacle.scene")
 	obstacles[1] = LoadScene("Scenes/Chair.scene")
@@ -26,3 +25,4 @@ end
 function OnFixedUpdate()
 
 end
+
