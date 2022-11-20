@@ -17,8 +17,6 @@ function OnFixedUpdate()
 	local offscreen = camera.Camera:GetOrthoSize() / 2 * -1
 	
 	if transform.Position.x < offscreen then
-		CurrentEntity:Destroy()
+		--CurrentEntity:Destroy()
 	end
 end
-
-

@@ -2,7 +2,7 @@
     <Gravity X="0" Y="-9.8100004"/>
     <Entity Name="Spawner" ID="10842461747357181367">
         <Transform>
-            <Position X="5.2945843" Y="-0.60000002" Z="1"/>
+            <Position X="5.2945843" Y="-0.60000002" Z="0.8"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="1" Y="1" Z="1"/>
         </Transform>
@@ -52,6 +52,7 @@
             <Offset X="0" Y="0"/>
             <Size X="0.30000001" Y="0.5"/>
         </BoxCollider2D>
+        <LuaScript Filepath="Scripts/Player.lua"/>
     </Entity>
     <Entity Name="Camera" ID="10113630780356128673">
         <Transform>
