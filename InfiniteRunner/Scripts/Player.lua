@@ -1,4 +1,4 @@
-jumpSpeed = 6.0
+jumpSpeed = 8.0
 forwardSpeed = 1.0
 
 local rigidBody = {}
@@ -33,4 +33,5 @@ end
 function OnDestroy()
 
 end
+
 
