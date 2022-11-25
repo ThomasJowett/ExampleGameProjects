@@ -14,9 +14,9 @@
             <Tint R="1" G="1" B="1" A="1"/>
         </AnimatedSprite>
         <RigidBody2D BodyType="2" FixedRotation="true" GravityScale="1" AngularDamping="0" LinearDamping="0"/>
-        <CapsuleCollider2D Direction="0" Radius="0.1" Height="0.80000001">
+        <CapsuleCollider2D Direction="0" Radius="0.090000004" Height="0.76999998">
             <PhysicsMaterial Filepath="Player.physicsmaterial"/>
-            <Offset X="0" Y="-0.1"/>
+            <Offset X="0" Y="-0.2"/>
         </CapsuleCollider2D>
         <LuaScript Filepath="Scripts/PlayerController.lua"/>
     </Entity>
