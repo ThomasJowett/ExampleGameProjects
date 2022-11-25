@@ -1,6 +1,6 @@
 <Scene EngineVersion="1">
     <Gravity X="0" Y="-19.809999"/>
-    <Entity Name="Spawner" ID="10842461747357181367">
+    <Entity Name="Spawner" ID="10842461747357181367-12628332643594260887">
         <Transform>
             <Position X="5.2945843" Y="-0.60000002" Z="0.80000001"/>
             <Rotation X="0" Y="0" Z="0"/>
@@ -8,7 +8,7 @@
         </Transform>
         <LuaScript Filepath="Scripts/Spawner.lua"/>
     </Entity>
-    <Entity Name="Floor" ID="4523489954062349260">
+    <Entity Name="Floor" ID="4523489954062349260-13827844384019186921">
         <Transform>
             <Position X="0" Y="-1.5" Z="0.099999972"/>
             <Rotation X="1.5707964" Y="0" Z="0"/>
@@ -25,7 +25,7 @@
         </BoxCollider2D>
         <LuaScript Filepath="Scripts/Floor.lua"/>
     </Entity>
-    <Entity Name="Wall" ID="3824128588513349523">
+    <Entity Name="Wall" ID="3824128588513349523-12800302305338073582">
         <Transform>
             <Position X="0" Y="0" Z="-0.5"/>
             <Rotation X="1.5707964" Y="0" Z="0"/>
@@ -37,7 +37,7 @@
         </Primitive>
         <LuaScript Filepath="Scripts/Wall.lua"/>
     </Entity>
-    <Entity Name="Player" ID="15116204643718136709">
+    <Entity Name="Player" ID="15116204643718136709-10516220568327878582">
         <Transform>
             <Position X="0" Y="0.60000002" Z="1"/>
             <Rotation X="0" Y="0" Z="0"/>
@@ -54,7 +54,7 @@
         </BoxCollider2D>
         <LuaScript Filepath="Scripts/Player.lua"/>
     </Entity>
-    <Entity Name="Camera" ID="10113630780356128673">
+    <Entity Name="Camera" ID="10113630780356128673-4099987587373614052">
         <Transform>
             <Position X="0" Y="0" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>

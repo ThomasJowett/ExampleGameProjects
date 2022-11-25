@@ -1,6 +1,6 @@
 <Scene EngineVersion="1">
     <Gravity X="0" Y="-9.8100004"/>
-    <Entity Name="Obstacle" ID="4067697449937198302">
+    <Entity Name="Crate" ID="4067697449937198302-2108097995792350809">
         <Transform>
             <Position X="0" Y="0.309313" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
