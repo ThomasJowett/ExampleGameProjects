@@ -9,7 +9,7 @@ function OnCreate()
 	local transform = CurrentEntity:GetTransformComponent()
 	spawnLocation = transform.Position;
 
-	obstacles[0] = LoadScene("Scenes/Obstacle.scene")
+	obstacles[0] = LoadScene("Scenes/Crate.scene")
 	obstacles[1] = LoadScene("Scenes/Chair.scene")
 	obstacles[2] = LoadScene("Scenes/Desk 1.scene")
 	obstacles[3] = LoadScene("Scenes/Desk 2.scene")
