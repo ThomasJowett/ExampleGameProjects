@@ -1,0 +1,9 @@
+<SpriteSheet EngineVersion="1" SpriteWidth="90" SpriteHeight="31">
+    <Texture Filepath="Textures/Sprites/Shield Robot.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Shield Prep" StartFrame="0" FrameCount="10" HoldTime="0.1"/>
+    <Animation Name="Idle" StartFrame="39" FrameCount="1" HoldTime="0.1"/>
+    <Animation Name="Shield Finished" StartFrame="16" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Shield Pulse" StartFrame="10" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Walk" StartFrame="20" FrameCount="7" HoldTime="0.1"/>
+    <Animation Name="Attack" StartFrame="27" FrameCount="13" HoldTime="0.1"/>
+</SpriteSheet>

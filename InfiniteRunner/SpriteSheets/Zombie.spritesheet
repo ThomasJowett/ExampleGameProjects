@@ -1,0 +1,4 @@
+<SpriteSheet EngineVersion="1" SpriteWidth="18" SpriteHeight="18">
+    <Texture Filepath="SpriteSheets/zombie-sprite-sheet.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Run" StartFrame="0" FrameCount="3" HoldTime="0.1"/>
+</SpriteSheet>
