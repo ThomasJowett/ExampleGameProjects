@@ -10,7 +10,7 @@ local physicsMaterial = {}
 function OnCreate()
 	spriteComp = CurrentEntity:GetAnimatedSpriteComponent()
 	rigidBodyComp = CurrentEntity:GetRigidBody2DComponent()
-	collider = CurrentEntity:GetBoxCollider2DComponent()
+	collider = CurrentEntity:GetCapsuleCollider2DComponent()
 	physicsMaterial = collider.PhysicsMaterial
 end
 
@@ -40,5 +40,6 @@ end
 function OnDestroy()
 
 end
+
 
 

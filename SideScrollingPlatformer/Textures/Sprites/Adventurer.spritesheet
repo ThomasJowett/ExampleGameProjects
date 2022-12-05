@@ -1,9 +1,15 @@
 <SpriteSheet EngineVersion="1" SpriteWidth="50" SpriteHeight="37">
     <Texture Filepath="Textures/Sprites/adventurer-hero.png" FilterMethod="1" WrapMethod="2"/>
-    <Animation Name="Crouched" StartFrame="4" FrameCount="4" HoldTime="0.2"/>
-    <Animation Name="Jump Land" StartFrame="14" FrameCount="2" HoldTime="0.2"/>
     <Animation Name="Run" StartFrame="8" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Crouched" StartFrame="14" FrameCount="4" HoldTime="0.2"/>
+    <Animation Name="Jump Land" StartFrame="14" FrameCount="2" HoldTime="0.2"/>
     <Animation Name="Idle" StartFrame="0" FrameCount="4" HoldTime="0.2"/>
-    <Animation Name="Jump Loop" StartFrame="22" FrameCount="2" HoldTime="0.2"/>
+    <Animation Name="Summersault" StartFrame="16" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Attack" StartFrame="94" FrameCount="15" HoldTime="0.1"/>
     <Animation Name="Jump Start" StartFrame="16" FrameCount="2" HoldTime="0.2"/>
+    <Animation Name="Jump Loop" StartFrame="22" FrameCount="2" HoldTime="0.2"/>
+    <Animation Name="Slide" StartFrame="24" FrameCount="5" HoldTime="0.1"/>
+    <Animation Name="Wall Climb" StartFrame="81" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Rest" StartFrame="66" FrameCount="3" HoldTime="0.30000001"/>
+    <Animation Name="Wall Slide" StartFrame="79" FrameCount="2" HoldTime="0.1"/>
 </SpriteSheet>
