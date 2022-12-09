@@ -1,3 +1,12 @@
 <Tileset EngineVersion="1" TileWidth="16" TileHeight="16">
     <Texture Filepath="Textures/Tilesets/jungle tileset.png" FilterMethod="1" WrapMethod="2"/>
+    <Tile Id="100" Probability="1" Shape="1"/>
+    <Tile Id="101" Probability="1" Shape="1"/>
+    <Tile Id="102" Probability="1" Shape="1"/>
+    <Tile Id="103" Probability="1" Shape="1"/>
+    <Tile Id="104" Probability="1" Shape="1"/>
+    <Tile Id="109" Probability="1" Shape="1"/>
+    <Tile Id="152" Probability="1" Shape="1"/>
+    <Tile Id="448" Probability="1" Shape="1"/>
+    <Tile Id="449" Probability="1" Shape="1"/>
 </Tileset>

@@ -5,5 +5,5 @@
     <Animation Name="Shield Finished" StartFrame="16" FrameCount="4" HoldTime="0.1"/>
     <Animation Name="Shield Pulse" StartFrame="10" FrameCount="6" HoldTime="0.1"/>
     <Animation Name="Walk" StartFrame="20" FrameCount="7" HoldTime="0.1"/>
-    <Animation Name="Attack" StartFrame="27" FrameCount="13" HoldTime="0.1"/>
+    <Animation Name="Attack" StartFrame="27" FrameCount="12" HoldTime="0.1"/>
 </SpriteSheet>
