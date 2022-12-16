@@ -6,7 +6,25 @@
     <Tile Id="103" Probability="1" Shape="1"/>
     <Tile Id="104" Probability="1" Shape="1"/>
     <Tile Id="109" Probability="1" Shape="1"/>
+    <Tile Id="148" Probability="1" Shape="1"/>
     <Tile Id="152" Probability="1" Shape="1"/>
+    <Tile Id="205" Probability="1" Shape="1"/>
+    <Tile Id="206" Probability="1" Shape="1"/>
+    <Tile Id="209" Probability="1" Shape="1"/>
+    <Tile Id="292" Probability="1" Shape="1"/>
+    <Tile Id="293" Probability="1" Shape="1"/>
+    <Tile Id="296" Probability="1" Shape="1"/>
     <Tile Id="448" Probability="1" Shape="1"/>
     <Tile Id="449" Probability="1" Shape="1"/>
+    <Tile Id="454" Probability="1" Shape="1"/>
+    <Tile Id="673" Probability="1" Shape="1"/>
+    <Tile Id="674" Probability="1" Shape="1"/>
+    <Tile Id="675" Probability="1" Shape="1"/>
+    <Tile Id="676" Probability="1" Shape="1"/>
+    <Tile Id="677" Probability="1" Shape="1"/>
+    <Tile Id="678" Probability="1" Shape="1"/>
+    <Tile Id="679" Probability="1" Shape="1"/>
+    <Tile Id="680" Probability="1" Shape="1"/>
+    <Tile Id="681" Probability="1" Shape="1"/>
+    <Tile Id="682" Probability="1" Shape="1"/>
 </Tileset>
