@@ -2,10 +2,11 @@
     <Gravity X="0" Y="-9.8100004"/>
     <Entity Name="MonteCarlo Manager" ID="1093810342638130295-13716469021390721988">
         <Transform>
-            <Position X="0" Y="0" Z="0"/>
+            <Position X="0" Y="0.1" Z="0.2"/>
             <Rotation X="0" Y="0" Z="0"/>
-            <Scale X="1" Y="1" Z="1"/>
+            <Scale X="0.1" Y="0.1" Z="0.1"/>
         </Transform>
+        <Text MaxWidth="20"><Colour R="1" G="1" B="1" A="1"/></Text>
         <LuaScript Filepath="Scripts/MonteCarlo.lua"/>
     </Entity>
     <Entity Name="Background" ID="4655046987303227018-16749363808689167237">

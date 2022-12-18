@@ -4,8 +4,11 @@ local bluePositions = 0
 local entities = {}
 local numEntities = 0
 
+local textComp = {}
+
 -- Called when entity is created
 function OnCreate()
+	textComp = CurrentEntity:GetTextComponent()
 end
 
 -- Called once per frame
@@ -13,7 +16,8 @@ function OnUpdate(deltaTime)
 	local pi = 4 * redPositions / (bluePositions + redPositions)
 
 	--TODO: display this as text on the screen
-	Log.Info(tostring(pi) .. "	out by	" .. tostring(math.abs(math.pi - pi)))
+	--Log.Info(tostring(pi) .. "	out by	" .. tostring(math.abs(math.pi - pi)))
+	textComp.Text = "Pi: " .. tostring(pi) .. "\nAcurracy: " .. tostring(math.abs(math.pi - pi))
 end
 
 -- Called on a fixed interval
@@ -50,5 +54,3 @@ end
 function OnDestroy()
 
 end
-
-

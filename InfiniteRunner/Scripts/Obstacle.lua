@@ -14,9 +14,9 @@ end
 function OnFixedUpdate()
 	rigidBody2DComp:SetLinearVelocity(velocity)
 
-	local offscreen = camera.Camera:GetOrthoSize() / 2 * -1
+	local offscreen = (CurrentScene:GetPrimaryCamera():GetCameraComponent().Camera:GetOrthoSize() * camera.Camera:GetAspectRatio()) / 2 * -1
 	
-	if transform.Position.x < offscreen then
-		--CurrentEntity:Destroy()
+	if CurrentEntity:GetTransformComponent().Position.x + (CurrentEntity:GetBoxCollider2DComponent().Size.x * CurrentEntity:GetTransformComponent().Scale.x) < offscreen then
+		CurrentEntity:Destroy()
 	end
 end

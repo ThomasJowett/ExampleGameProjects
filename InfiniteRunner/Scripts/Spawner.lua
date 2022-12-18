@@ -30,5 +30,3 @@ end
 function OnFixedUpdate()
 
 end
-
-

@@ -28,10 +28,14 @@ end
 -- Called on a fixed interval
 function OnFixedUpdate()
 
+	local offscreen = (CurrentScene:GetPrimaryCamera():GetCameraComponent().Camera:GetOrthoSize() * CurrentScene:GetPrimaryCamera():GetCameraComponent().Camera:GetAspectRatio()) / 2 * -1
+	
+	if CurrentEntity:GetTransformComponent().Position.x + (CurrentEntity:GetBoxCollider2DComponent().Size.x * CurrentEntity:GetTransformComponent().Scale.x) < offscreen then
+		ChangeScene("Scenes/Main.scene")
+	end
+
 end
 -- Called when entity is destroyed
 function OnDestroy()
 
 end
-
-
