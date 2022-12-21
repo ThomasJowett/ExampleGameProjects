@@ -3,25 +3,41 @@ forwardSpeed = 1.0
 
 local rigidBody = {}
 local transform = {}
+local sprite = {}
+
+local standing = false;
 
 -- Called when entity is created
 function OnCreate()
 	rigidBody = CurrentEntity:GetRigidBody2DComponent()
 	transform = CurrentEntity:GetTransformComponent()
+	sprite = CurrentEntity:GetAnimatedSpriteComponent()
 end
 
 -- Called once per frame
 function OnUpdate(deltaTime)
 
-	local yVelocity = rigidBody:GetLinearVelocity().y
+	local velocity = rigidBody:GetLinearVelocity()
 
-	if yVelocity == 0.0 and Input.IsKeyPressed(" ") then
+	if velocity.y == 0.0 and Input.IsKeyPressed(" ") then
 		local xTransform = transform.Position.x
 		local forward = 0.0
 		if transform.Position.x < 0.0 then
 			forward = forwardSpeed
 		end
 		rigidBody:SetLinearVelocity(Vec2.new(forward, jumpSpeed))
+	end
+
+	if velocity.x < 0 then
+		if not standing then 
+			sprite:SelectAnimation("Idle")
+			standing = true
+		end
+	else
+		if standing then
+			sprite:SelectAnimation("Run")
+			standing = false
+		end
 	end
 
 end

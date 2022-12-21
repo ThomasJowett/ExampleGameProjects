@@ -6,8 +6,9 @@
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="0.30000001" Y="0.30000001" Z="0.30000001"/>
         </Transform>
-        <Text MaxWidth="10">TIME: 0:00
-BEST: 0:00<Font Filepath="Fonts/nokiafc22.ttf"/><Colour R="1" G="1" B="1" A="1"/></Text>
+        <Text MaxWidth="10">TIME: 00:00
+BEST: 00:00<Font Filepath="Fonts/nokiafc22.ttf"/><Colour R="1" G="1" B="1" A="1"/></Text>
+        <LuaScript Filepath="Scripts/Score.lua"/>
     </Entity>
     <Entity Name="Spawner" ID="10842461747357181367-12628332643594260887">
         <Transform>

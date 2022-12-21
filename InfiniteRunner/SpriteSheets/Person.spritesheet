@@ -1,5 +1,5 @@
 <SpriteSheet EngineVersion="1" SpriteWidth="18" SpriteHeight="18">
     <Texture Filepath="SpriteSheets/person-sprite-sheet.png" FilterMethod="1" WrapMethod="2"/>
-    <Animation Name="Idle" StartFrame="0" FrameCount="3" HoldTime="0.1"/>
+    <Animation Name="Idle" StartFrame="0" FrameCount="2" HoldTime="0.5"/>
     <Animation Name="Run" StartFrame="2" FrameCount="7" HoldTime="0.1"/>
 </SpriteSheet>
