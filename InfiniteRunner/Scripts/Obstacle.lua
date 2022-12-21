@@ -1,5 +1,5 @@
-local rigidBody2DComp = {}
 velocity = Vec2.new(-3, 0)
+local rigidBody2DComp = {}
 local camera = {}
 local transform = {}
 
