@@ -5,17 +5,11 @@ local rigidBodyComp = {}
 local collider = {}
 local physicsMaterial = {}
 local transformComp = {}
+local footCollider = {}
 
 local isGrounded = false;
-
-function CheckIsGrounded()
-	local hit = CurrentScene:RayCast2D(
-		Vec2.new(transformComp.Position.x, transformComp.Position.y- (collider.Height * transformComp.Scale.y * 0.5)),
-		Vec2.new(transformComp.Position.x, transformComp.Position.y - (collider.Height * transformComp.Scale.y * 0.5) - 1))
-
-	isGrounded = hit.Hit;
-	--Log.Debug(tostring(hit.Hit))
-end
+local numContacts = 0;
+local jumpTimeout = 0;
 
 
 -- Called when entity is created
@@ -33,12 +27,11 @@ function OnUpdate(deltaTime)
 end
 -- Called on a fixed interval
 function OnFixedUpdate()
-	CheckIsGrounded()
 	local velocity = rigidBodyComp:GetLinearVelocity()
 	local moveInput = 0.0
 
 	
-physicsMaterial:SetFriction(0.01)
+	physicsMaterial:SetFriction(0.01)
 	
 	if Input.IsKeyPressed('A') then
 		moveInput = -1.0
@@ -58,8 +51,9 @@ physicsMaterial:SetFriction(0.01)
 
 	rigidBodyComp:SetLinearVelocity(Vec2.new(moveInput * maxSpeed, velocity.y))
 
-	if Input.IsKeyPressed(' ') and isGrounded then
-		rigidBodyComp:ApplyImpulse(Vec2.new(0, 5.0))
+	if Input.IsKeyPressed(' ') and isGrounded and jumpTimeout == 0 then
+		rigidBodyComp:ApplyImpulse(Vec2.new(0, 30.0))
+		jumpTimeout = 15
 	end 
 	
 	if(rigidBodyComp:GetLinearVelocity().x > 0.0001) then
@@ -67,9 +61,30 @@ physicsMaterial:SetFriction(0.01)
 	elseif(rigidBodyComp:GetLinearVelocity().x < -0.0001) then
 		transformComp.Scale.x = -math.abs(transformComp.Scale.x)
 	end
+	
+	if jumpTimeout > 0 then
+		jumpTimeout = jumpTimeout - 1
+	end
 end
 -- Called when entity is destroyed
 function OnDestroy()
 
 end
+
+function OnBeginContact(entity, normal, point)
+	numContacts = numContacts + 1
+	if(numContacts > 0) then
+		isGrounded = true
+	end
+end
+
+function OnEndContact(entity, normal, point)
+	numContacts = numContacts - 1
+	if(numContacts == 0) then
+		isGrounded = false
+	end
+end
+
+
+
 
