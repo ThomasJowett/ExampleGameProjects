@@ -9,7 +9,7 @@
         <Camera Primary="true" FixedAspectRatio="false">
             <SceneCamera ProjectionType="1" OrthoSize="10" OrthoNear="-1" OrthoFar="1" PerspectiveNear="1" PerspectiveFar="1000" FOV="1.5707964"/>
         </Camera>
-        <AnimatedSprite CurrentAnimation="Idle">
+        <AnimatedSprite Animation="Idle">
             <SpriteSheet Filepath="Textures/Sprites/Adventurer.spritesheet"/>
             <Tint R="1" G="1" B="1" A="1"/>
         </AnimatedSprite>
@@ -42,7 +42,7 @@
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="5.625" Y="1.9375" Z="0.37252808"/>
         </Transform>
-        <AnimatedSprite CurrentAnimation="Walk">
+        <AnimatedSprite Animation="Walk">
             <SpriteSheet Filepath="Textures/Sprites/ShieldRobot.spritesheet"/>
             <Tint R="1" G="1" B="1" A="1"/>
         </AnimatedSprite>
@@ -62,7 +62,7 @@
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="1" Y="1" Z="1"/>
         </Transform>
-        <Tilemap Filepath="Tilemaps/Jungle.tileset" TilesWide="50" TilesHigh="30" Orientation="Orthogonal" IsTrigger="false">
+        <Tilemap Filepath="Tilemaps/Jungle.tileset" TilesWide="50" TilesHigh="30" TileWidth="16" TileHeight="16" Orientation="Orthogonal" IsTrigger="false">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -101,7 +101,7 @@
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="1" Y="1" Z="1"/>
         </Transform>
-        <Tilemap Filepath="Tilemaps/Jungle.tileset" TilesWide="50" TilesHigh="30" Orientation="Orthogonal" IsTrigger="false">
+        <Tilemap Filepath="Tilemaps/Jungle.tileset" TilesWide="50" TilesHigh="30" TileWidth="16" TileHeight="16" Orientation="Orthogonal" IsTrigger="false">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

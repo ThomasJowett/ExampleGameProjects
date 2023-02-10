@@ -6,12 +6,12 @@
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="-1.125" Y="1.125" Z="1.25"/>
         </Transform>
-        <AnimatedSprite CurrentAnimation="Run">
+        <AnimatedSprite Animation="Run">
             <SpriteSheet Filepath="SpriteSheets/Zombie.spritesheet"/>
             <Tint R="1" G="1" B="1" A="1"/>
         </AnimatedSprite>
         <RigidBody2D BodyType="1" FixedRotation="false" GravityScale="1" AngularDamping="0" LinearDamping="0"/>
-        <BoxCollider2D>
+        <BoxCollider2D IsTrigger="false">
             <Offset X="0" Y="-0.1"/>
             <Size X="0.2" Y="0.40000001"/>
         </BoxCollider2D>

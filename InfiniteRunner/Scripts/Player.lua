@@ -30,12 +30,12 @@ function OnUpdate(deltaTime)
 
 	if velocity.x < 0 then
 		if not standing then 
-			sprite:SelectAnimation("Idle")
+			sprite.Animation = "Idle"
 			standing = true
 		end
 	else
 		if standing then
-			sprite:SelectAnimation("Run")
+			sprite.Animation = "Run"
 			standing = false
 		end
 	end

@@ -1,0 +1,3 @@
+<SpriteSheet EngineVersion="1" SpriteWidth="100" SpriteHeight="80">
+    <Texture Filepath="Textures/Sprites/PrototypeHero_noSword.png" FilterMethod="1" WrapMethod="2"/>
+</SpriteSheet>
