@@ -44,8 +44,9 @@ function OnFixedUpdate()
 
 	if not isGrounded or moveInput == 0 then
 		physicsMaterial:SetFriction(1.0)
+		spriteComp.Animation = "Idle"
 	else
-		--spriteComp:SelectAnimation("Run")
+		spriteComp.Animation = "Run"
 	end
 
 
