@@ -33,12 +33,11 @@ function OnFixedUpdate()
 	
 	physicsMaterial:SetFriction(0.01)
 	
-	if Input.IsKeyPressed('A') then
+	if Input.IsKeyPressed('A') or Input.GetJoystickAxis(0,0) < -0.2 then
 		moveInput = -1.0
-		
 	end
 
-	if (Input.IsKeyPressed('D')) then
+	if (Input.IsKeyPressed('D')) or Input.GetJoystickAxis(0,0) > 0.2 then
 		moveInput = moveInput + 1.0
 	end
 
@@ -58,7 +57,9 @@ function OnFixedUpdate()
 
 	rigidBodyComp:SetLinearVelocity(Vec2.new(moveInput * maxSpeed, velocity.y))
 
-	if Input.IsKeyPressed(' ') and isGrounded and jumpTimeout == 0 then
+	local canJump = isGrounded and jumpTimeout == 0
+
+	if (Input.IsKeyPressed(' ') or Input.IsJoystickButtonPressed(0, JoystickButton.A)) and canJump then
 		rigidBodyComp:ApplyImpulse(Vec2.new(0, 30.0))
 		jumpTimeout = 15
 	end 
