@@ -4,7 +4,7 @@
     <Animation Name="Crouched" StartFrame="4" FrameCount="4" HoldTime="0.2"/>
     <Animation Name="Jump Land" StartFrame="14" FrameCount="2" HoldTime="0.2"/>
     <Animation Name="Idle" StartFrame="0" FrameCount="4" HoldTime="0.2"/>
-    <Animation Name="Summersault" StartFrame="16" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Summersault" StartFrame="18" FrameCount="4" HoldTime="0.1"/>
     <Animation Name="Attack" StartFrame="94" FrameCount="15" HoldTime="0.1"/>
     <Animation Name="Jump Start" StartFrame="16" FrameCount="2" HoldTime="0.2"/>
     <Animation Name="Jump Loop" StartFrame="22" FrameCount="2" HoldTime="0.2"/>

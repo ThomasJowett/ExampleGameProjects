@@ -15,6 +15,7 @@ end
 
 -- Called when entity is created
 function OnCreate()
+	Input.DisableCursor()
 	scoreText = CurrentEntity:GetTextComponent()
 
 	local file = io.open(filename, "r")
@@ -64,6 +65,7 @@ function OnDestroy()
 			Log.Error("Failed to open file for writing")
 		end
 	end
+
 end
 
 

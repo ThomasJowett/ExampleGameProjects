@@ -2,7 +2,7 @@
     <Gravity X="0" Y="-19.809999"/>
     <Entity Name="Score" ID="7763145220335774650-669518498771377904">
         <Transform>
-            <Position X="-3" Y="1.5" Z="0"/>
+            <Position X="-3" Y="1.5" Z="1"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="0.30000001" Y="0.30000001" Z="0.30000001"/>
         </Transform>
@@ -48,7 +48,7 @@ BEST: 00:00<Font Filepath="Fonts/nokiafc22.ttf"/><Colour R="1" G="1" B="1" A="1"
     </Entity>
     <Entity Name="Player" ID="15116204643718136709-10516220568327878582">
         <Transform>
-            <Position X="0" Y="0.60000002" Z="1"/>
+            <Position X="0" Y="0.60000002" Z="0.89999998"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="1.125" Y="1.125" Z="1"/>
         </Transform>

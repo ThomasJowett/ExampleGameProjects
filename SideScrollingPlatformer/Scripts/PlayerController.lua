@@ -42,11 +42,17 @@ function OnFixedUpdate()
 		moveInput = moveInput + 1.0
 	end
 
-	if not isGrounded or moveInput == 0 then
-		physicsMaterial:SetFriction(1.0)
-		spriteComp.Animation = "Idle"
-	else
-		spriteComp.Animation = "Run"
+	if isGrounded then 
+		if moveInput == 0 then
+			physicsMaterial:SetFriction(1.0)
+			spriteComp.Animation = "Idle"
+		else
+			spriteComp.Animation = "Run"
+		end
+	elseif rigidBodyComp:GetLinearVelocity().y > 0.0 then
+		spriteComp.Animation = "Jump Start"
+	elseif rigidBodyComp:GetLinearVelocity().y < 0.0 then
+		spriteComp.Animation = "Jump Loop"
 	end
 
 
@@ -85,7 +91,3 @@ function OnEndContact(entity, normal, point)
 		isGrounded = false
 	end
 end
-
-
-
-
