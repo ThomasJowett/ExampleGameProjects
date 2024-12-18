@@ -45,7 +45,7 @@ function OnFixedUpdate()
 	end
 
 	table.insert(entities, entity)
-	local transform = entity:GetTransformComponent()
+	local transform = entity:AddTransformComponent()
 	transform.Position = Vec3.new(position.x, position.y, 0.1)
 	entity:GetTransformComponent().Scale = Vec3.new(0.01, 0.01, 0.01)
 	numEntities = numEntities + 1
