@@ -30,7 +30,7 @@
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="24" Y="13.5" Z="1"/>
         </Transform>
-        <LuaScript Filepath="Scripts/Parrallax Background.lua"/>
+        <LuaScript Filepath="Scripts/Parallax Background.lua"/>
         <Entity Name="Background1" ID="2601486811886352363-10403706988618846513">
             <Transform>
                 <Position X="0" Y="0" Z="-0.60000002"/>
