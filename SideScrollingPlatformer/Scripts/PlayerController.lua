@@ -62,6 +62,7 @@ function OnFixedUpdate()
 	if (Input.IsKeyPressed(' ') or Input.IsJoystickButtonPressed(0, JoystickButton.A)) and canJump then
 		rigidBodyComp:ApplyImpulse(Vec2.new(0, 30.0))
 		jumpTimeout = 15
+		Signal.Emit("player_jump", CurrentEntity, {})
 	end 
 	
 	if(rigidBodyComp:GetLinearVelocity().x > 0.0001) then
@@ -82,6 +83,9 @@ end
 function OnBeginContact(entity, normal, point)
 	numContacts = numContacts + 1
 	if(numContacts > 0) then
+		if not isGrounded then
+			Signal.Emit("player_land", CurrentEntity, {})
+		end
 		isGrounded = true
 	end
 end

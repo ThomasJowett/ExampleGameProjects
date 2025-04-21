@@ -22,7 +22,6 @@ function OnCreate()
 	local children = GetAllChildren(CurrentEntity)
 	for i, child in ipairs(children) do
 		local transform = child:GetTransformComponent()
-		Log.Debug(child:GetName())
 		table.insert(parallaxLayers,  {
 			entity = child,
 			originalX = transform.Position.x,

@@ -25,8 +25,6 @@ function OnCreate()
 
 	transform = CurrentEntity:GetTransformComponent()
 	transform.Position = player.Position
-
-	Log.Debug(tostring(halfScreenWidth))
 end
 
 -- Called once per frame

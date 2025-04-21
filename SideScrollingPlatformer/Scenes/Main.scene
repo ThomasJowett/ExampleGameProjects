@@ -133,6 +133,14 @@
                 <Size X="0.07" Y="0.0099999998"/>
             </BoxCollider2D>
         </Entity>
+        <Entity Name="Land Sound Effect" ID="7862757427009522282-5722986364726440452">
+            <LuaScript Filepath="Scripts/PlaySoundOnSignal.lua"/>
+            <AudioSource Filepath="Audio/SoundEffects/Landing.wav" Volume="1.5" Pitch="1" Loop="false" MinDistance="1" MaxDistance="10" Rolloff="1" Stream="false" PlayOnStart="false"/>
+        </Entity>
+        <Entity Name="Jump Sound Effect" ID="7569937630002153970-14255378139750790281">
+            <LuaScript Filepath="Scripts/PlaySoundOnSignal- Copy.lua"/>
+            <AudioSource Filepath="Audio/SoundEffects/Jump.wav" Volume="3" Pitch="1" Loop="false" MinDistance="1" MaxDistance="10" Rolloff="1" Stream="false" PlayOnStart="false"/>
+        </Entity>
     </Entity>
     <Entity Name="Robot" ID="6140303747334149383-8289853983514797483">
         <Transform>
