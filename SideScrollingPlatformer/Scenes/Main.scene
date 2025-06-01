@@ -39,7 +39,7 @@
             </Transform>
             <Primitive Type="2">
                 <Material Filepath="Materials/Background1.material"/>
-                <Plane Width="1" Length="1" WidthLines="2" LengthLines="2" TileU="1" TileV="1"/>
+                <Plane Width="4" Length="1" WidthLines="2" LengthLines="2" TileU="4" TileV="1"/>
             </Primitive>
         </Entity>
         <Entity Name="Background2" ID="6694765758041052111-12360293914898425641">
@@ -50,7 +50,7 @@
             </Transform>
             <Primitive Type="2">
                 <Material Filepath="Materials/Background2.material"/>
-                <Plane Width="1" Length="1" WidthLines="2" LengthLines="2" TileU="1" TileV="1"/>
+                <Plane Width="4" Length="1" WidthLines="2" LengthLines="2" TileU="4" TileV="1"/>
             </Primitive>
         </Entity>
         <Entity Name="Background3" ID="5173954685138069276-5236593783894550397">
@@ -61,7 +61,7 @@
             </Transform>
             <Primitive Type="2">
                 <Material Filepath="Materials/Background3.material"/>
-                <Plane Width="1" Length="1" WidthLines="2" LengthLines="2" TileU="1" TileV="1"/>
+                <Plane Width="4" Length="1" WidthLines="2" LengthLines="2" TileU="4" TileV="1"/>
             </Primitive>
         </Entity>
         <Entity Name="Background4" ID="12825485819274748661-9095291954926511835">
@@ -72,7 +72,7 @@
             </Transform>
             <Primitive Type="2">
                 <Material Filepath="Materials/Background4.material"/>
-                <Plane Width="1" Length="1" WidthLines="2" LengthLines="2" TileU="1" TileV="1"/>
+                <Plane Width="4" Length="1" WidthLines="2" LengthLines="2" TileU="4" TileV="1"/>
             </Primitive>
         </Entity>
         <Entity Name="Background5" ID="4437789586382724579-5566552745453418063">
@@ -83,7 +83,7 @@
             </Transform>
             <Primitive Type="2">
                 <Material Filepath="Materials/Background5.material"/>
-                <Plane Width="1" Length="1" WidthLines="2" LengthLines="2" TileU="1" TileV="1"/>
+                <Plane Width="4" Length="1" WidthLines="2" LengthLines="2" TileU="4" TileV="1"/>
             </Primitive>
         </Entity>
     </Entity>

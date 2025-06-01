@@ -3,6 +3,8 @@ local parallaxLayers = {}
 
 local scrollFactors = {0.0, 0.1, 0.2, 0.6, 1.0}
 --local scrollFactors = {1.0, 0.6, 0.2, 0.1, 0.0}
+local sizeX = 0
+local sizeY = 0
 
 function GetAllChildren(entity)
 	local children = {}
@@ -37,7 +39,18 @@ end
 
 -- Called once per frame
 function OnUpdate(deltaTime)
-	
+	local cameraComp = CurrentScene:GetPrimaryCamera():GetCameraComponent()
+	local cameraSizeX = cameraComp.Camera:GetOrthoSize() * cameraComp.Camera:GetAspectRatio()
+	local cameraSizeY = cameraComp.Camera:GetOrthoSize()
+	if cameraSizeX ~= sizeX or cameraSizeY ~= sizeX then
+		for _, layer in ipairs(parallaxLayers) do
+			local plane = layer.entity:GetPrimitiveComponent()
+			local pixelsPerUnit = CurrentScene:GetPixelsPerUnit()
+			plane:SetPlane(cameraSizeX / pixelsPerUnit, 1, 2, 2, cameraSizeX / pixelsPerUnit, 1)
+			sizeX = cameraSizeX
+			sizeY = cameraSizeY
+		end
+	end
 end
 -- Called on a fixed interval
 function OnFixedUpdate()
