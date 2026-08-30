@@ -1,6 +1,7 @@
 {
     "SideScrollingPlatformer.proj": {
         "Default Scene": "Scenes/Main.scene",
-        "Description": "A 2D Side Scrolling Platformer"
+        "Description": "A 2D Side Scrolling Platformer",
+        "Sprite Atlas Page Size": 2048
     }
 }

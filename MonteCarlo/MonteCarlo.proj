@@ -1,6 +1,7 @@
 {
     "MonteCarlo.proj": {
         "Default Scene": "Scenes/MonteCarlo.scene",
-        "Description": ""
+        "Description": "",
+        "Sprite Atlas Page Size": 2048
     }
 }
