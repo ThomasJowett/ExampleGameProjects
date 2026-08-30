@@ -1,0 +1,7 @@
+{
+    "Solitaire.proj": {
+        "Default Scene": "Scenes/Main.scene",
+        "Description": "",
+        "Sprite Atlas Page Size": 600
+    }
+}
