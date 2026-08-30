@@ -1,0 +1,10 @@
+<SpriteAtlas EngineVersion="1" PageSize="256">
+    <Page Index="0" File="Page0.png"/>
+    <Region Path="Sprites/desk-3.png" Page="0" X="78" Y="2" W="26" H="8" MTime="133096476448839128" Size="15564"/>
+    <Region Path="Sprites/chair.png" Page="0" X="2" Y="2" W="8" H="15" MTime="133096475188186076" Size="15506"/>
+    <Region Path="Sprites/desk-1.png" Page="0" X="41" Y="2" W="22" H="9" MTime="133096476012259428" Size="15744"/>
+    <Region Path="Sprites/crate.png" Page="0" X="27" Y="2" W="10" H="10" MTime="133096475773362896" Size="15518"/>
+    <Region Path="Sprites/trash.png" Page="0" X="67" Y="2" W="7" H="9" MTime="133096476857951498" Size="15468"/>
+    <Region Path="Sprites/desk-2.png" Page="0" X="108" Y="2" W="18" H="8" MTime="133096476191594638" Size="15689"/>
+    <Region Path="Sprites/dresser.png" Page="0" X="14" Y="2" W="9" H="12" MTime="133096476725386090" Size="18292"/>
+</SpriteAtlas>
