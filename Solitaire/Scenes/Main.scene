@@ -1,3 +1,63 @@
 <Scene EngineVersion="1">
-    <Gravity X="0" Y="-9.8100004"/>
+    <Gravity X="0" Y="0"/>
+    <Entity Name="Camera" ID="4827301958473610294-1029384756102938475">
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+        </Transform>
+        <Camera Primary="true" FixedAspectRatio="false">
+            <SceneCamera ProjectionType="1" OrthoSize="10.5" OrthoNear="-2" OrthoFar="5" PerspectiveNear="1" PerspectiveFar="1000" FOV="1.5707964"/>
+        </Camera>
+    </Entity>
+    <Entity Name="Table Background" ID="8371029485610293847-5610293847102938475">
+        <Transform>
+            <Position X="0" Y="0" Z="-1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="24" Y="13.5" Z="1"/>
+        </Transform>
+        <Sprite TilingFactor="1">
+            <Tint R="0.059999999" G="0.34999999" B="0.12" A="1"/>
+        </Sprite>
+    </Entity>
+    <Entity Name="ScoreText" ID="1928374650918273645-8273645918273645918">
+        <Transform>
+            <Position X="-7.4000001" Y="5.4000001" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="0.30000001" Y="0.30000001" Z="0.30000001"/>
+        </Transform>
+        <Text MaxWidth="60">Score: 0   Moves: 0<Colour R="1" G="1" B="1" A="1"/></Text>
+    </Entity>
+    <Entity Name="TimeText" ID="2837465091827364509-1827364509182736450">
+        <Transform>
+            <Position X="-1" Y="5.4000001" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="0.30000001" Y="0.30000001" Z="0.30000001"/>
+        </Transform>
+        <Text MaxWidth="30">Time: 00:00<Colour R="1" G="1" B="1" A="1"/></Text>
+    </Entity>
+    <Entity Name="NewGameText" ID="3746509182736450918-2736450918273645091">
+        <Transform>
+            <Position X="4.0999999" Y="5.4000001" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="0.30000001" Y="0.30000001" Z="0.30000001"/>
+        </Transform>
+        <Text MaxWidth="30">[ New Game ]<Colour R="1" G="0.85000002" B="0.2" A="1"/></Text>
+    </Entity>
+    <Entity Name="WinText" ID="4657382910465738291-5738291046573829104">
+        <Transform>
+            <Position X="-3.2" Y="0.60000002" Z="2"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="0.5" Y="0.5" Z="0.5"/>
+        </Transform>
+        <Text MaxWidth="40"><Colour R="1" G="0.89999998" B="0.2" A="1"/></Text>
+    </Entity>
+    <Entity Name="GameManager" ID="5738291046573829104-6573829104657382910">
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Rotation X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+        </Transform>
+        <LuaScript Filepath="Scripts/GameManager.lua"/>
+    </Entity>
 </Scene>
