@@ -2,7 +2,7 @@
     <Gravity X="0" Y="0"/>
     <Entity Name="Camera" ID="4827301958473610294-1029384756102938475">
         <Transform>
-            <Position X="0" Y="0" Z="0"/>
+            <Position X="0" Y="1" Z="0"/>
             <Rotation X="0" Y="0" Z="0"/>
             <Scale X="1" Y="1" Z="1"/>
         </Transform>
