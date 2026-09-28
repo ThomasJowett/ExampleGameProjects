@@ -1,0 +1,26 @@
+<SpriteSheet EngineVersion="1" SpriteWidth="48" SpriteHeight="48">
+    <Texture Filepath="Textures/Sprites/Enemies/SkeletonWithSword.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Leap_Up" StartFrame="168" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Leap_Left" StartFrame="160" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Death_Up" StartFrame="136" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Leap_Right" StartFrame="152" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Death_Down" StartFrame="112" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Hurt_Up" StartFrame="108" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Hurt_Left" StartFrame="100" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Hurt_Right" StartFrame="104" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Leap_Down" StartFrame="144" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Attack_Up" StartFrame="88" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Death_Right" StartFrame="120" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Run_Up" StartFrame="24" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Attack_Down" StartFrame="64" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Idle_Left" StartFrame="48" FrameCount="6" HoldTime="0.2"/>
+    <Animation Name="Hurt_Down" StartFrame="96" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Run_Down" StartFrame="0" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Idle_Down" StartFrame="32" FrameCount="6" HoldTime="0.2"/>
+    <Animation Name="Attack_Right" StartFrame="72" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Death_Left" StartFrame="128" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Idle_Right" StartFrame="40" FrameCount="6" HoldTime="0.2"/>
+    <Animation Name="Run_Left" StartFrame="16" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Attack_Left" StartFrame="80" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Run_Right" StartFrame="8" FrameCount="6" HoldTime="0.1"/>
+</SpriteSheet>

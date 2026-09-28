@@ -1,0 +1,28 @@
+<SpriteSheet EngineVersion="1" SpriteWidth="48" SpriteHeight="48">
+    <Texture Filepath="Textures/Sprites/Player/Warrior.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Run_Up" StartFrame="0" FrameCount="8" HoldTime="0.090000004"/>
+    <Animation Name="Death" StartFrame="184" FrameCount="5" HoldTime="0.30000001"/>
+    <Animation Name="Attack1_Left" StartFrame="240" FrameCount="6" HoldTime="0.079999998"/>
+    <Animation Name="Run_Right" StartFrame="8" FrameCount="8" HoldTime="0.090000004"/>
+    <Animation Name="Attack1_Up" StartFrame="224" FrameCount="6" HoldTime="0.079999998"/>
+    <Animation Name="Idle_Up" StartFrame="96" FrameCount="5" HoldTime="0.15000001"/>
+    <Animation Name="Dash_Up" StartFrame="288" FrameCount="5" HoldTime="0.1"/>
+    <Animation Name="Idle_Right" StartFrame="104" FrameCount="5" HoldTime="0.15000001"/>
+    <Animation Name="Run_Left" StartFrame="16" FrameCount="8" HoldTime="0.090000004"/>
+    <Animation Name="Attack1_Down" StartFrame="248" FrameCount="6" HoldTime="0.079999998"/>
+    <Animation Name="Dash_Down" StartFrame="312" FrameCount="5" HoldTime="0.1"/>
+    <Animation Name="Idle_Left" StartFrame="112" FrameCount="5" HoldTime="0.15000001"/>
+    <Animation Name="Attack1_Right" StartFrame="232" FrameCount="6" HoldTime="0.079999998"/>
+    <Animation Name="Attack2_Down" StartFrame="280" FrameCount="6" HoldTime="0.079999998"/>
+    <Animation Name="Attack2_Left" StartFrame="264" FrameCount="6" HoldTime="0.079999998"/>
+    <Animation Name="Attack2_Right" StartFrame="272" FrameCount="6" HoldTime="0.079999998"/>
+    <Animation Name="Attack2_Up" StartFrame="256" FrameCount="6" HoldTime="0.079999998"/>
+    <Animation Name="Dash_Right" StartFrame="296" FrameCount="5" HoldTime="0.1"/>
+    <Animation Name="Dash_Left" StartFrame="304" FrameCount="5" HoldTime="0.1"/>
+    <Animation Name="Idle_Down" StartFrame="120" FrameCount="5" HoldTime="0.15000001"/>
+    <Animation Name="Run_Down" StartFrame="24" FrameCount="8" HoldTime="0.090000004"/>
+    <Animation Name="Hurt_Down" StartFrame="152" FrameCount="4" HoldTime="0.15000001"/>
+    <Animation Name="Hurt_Right" StartFrame="136" FrameCount="4" HoldTime="0.15000001"/>
+    <Animation Name="Hurt_Left" StartFrame="144" FrameCount="4" HoldTime="0.15000001"/>
+    <Animation Name="Hurt_Up" StartFrame="128" FrameCount="4" HoldTime="0.15000001"/>
+</SpriteSheet>
