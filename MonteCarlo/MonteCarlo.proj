@@ -1,7 +1,5 @@
-{
-    "MonteCarlo.proj": {
-        "Default Scene": "Scenes/MonteCarlo.scene",
-        "Description": "",
-        "Sprite Atlas Page Size": 2048
-    }
-}
+<Project EngineVersion="1">
+    <DefaultScene Filepath="Scenes/MonteCarlo.scene"/>
+    <Description></Description>
+    <SpriteAtlasPageSize>2048</SpriteAtlasPageSize>
+</Project>

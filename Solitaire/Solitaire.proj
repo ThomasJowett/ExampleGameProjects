@@ -1,7 +1,5 @@
-{
-    "Solitaire.proj": {
-        "Default Scene": "Scenes/Main.scene",
-        "Description": "",
-        "Sprite Atlas Page Size": 600
-    }
-}
+<Project EngineVersion="1">
+    <DefaultScene Filepath="Scenes/Main.scene"/>
+    <Description>Klondike based Solitaire Card game</Description>
+    <SpriteAtlasPageSize>2048</SpriteAtlasPageSize>
+</Project>

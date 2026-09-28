@@ -1,7 +1,5 @@
-{
-    "InfiniteRunner.proj": {
-        "Default Scene": "Scenes/Main.scene",
-        "Description": "A 2D Side Scrolling Platformer",
-        "Sprite Atlas Page Size": 256
-    }
-}
+<Project EngineVersion="1">
+    <DefaultScene Filepath="Scenes/Main.scene"/>
+    <Description>2D Infinite Runner</Description>
+    <SpriteAtlasPageSize>2048</SpriteAtlasPageSize>
+</Project>

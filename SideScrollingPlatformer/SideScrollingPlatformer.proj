@@ -1,7 +1,5 @@
-{
-    "SideScrollingPlatformer.proj": {
-        "Default Scene": "Scenes/Main.scene",
-        "Description": "A 2D Side Scrolling Platformer",
-        "Sprite Atlas Page Size": 2048
-    }
-}
+<Project EngineVersion="1">
+    <DefaultScene Filepath="Scenes/Main.scene"/>
+    <Description>A 2D Side Scrolling Platformer</Description>
+    <SpriteAtlasPageSize>2048</SpriteAtlasPageSize>
+</Project>
