@@ -28,18 +28,9 @@ end
 -- Called on a fixed interval
 function OnFixedUpdate()
 	local velocity = rigidBodyComp:GetLinearVelocity()
-	local moveInput = 0.0
+	local moveInput = InputAction.Move:GetValue()
 
-	
 	physicsMaterial:SetFriction(0.01)
-	
-	if Input.IsKeyPressed('A') or Input.GetJoystickAxis(0,0) < -0.2 then
-		moveInput = -1.0
-	end
-
-	if (Input.IsKeyPressed('D')) or Input.GetJoystickAxis(0,0) > 0.2 then
-		moveInput = moveInput + 1.0
-	end
 
 	if isGrounded then 
 		if moveInput == 0 then
@@ -59,7 +50,7 @@ function OnFixedUpdate()
 
 	local canJump = isGrounded and jumpTimeout == 0
 
-	if (Input.IsKeyPressed(' ') or Input.IsJoystickButtonPressed(0, JoystickButton.A)) and canJump then
+	if InputAction.Jump:IsTriggered() and canJump then
 		rigidBodyComp:ApplyImpulse(Vec2.new(0, 30.0))
 		jumpTimeout = 15
 		Signal.Emit("player_jump", CurrentEntity, {})
