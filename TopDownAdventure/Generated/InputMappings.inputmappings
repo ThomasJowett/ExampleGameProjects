@@ -1,0 +1,26 @@
+<InputMappings>
+    <Action Name="Move" ValueType="Axis2D">
+        <Binding Device="Key" Code="68" Trigger="Down" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+        <Binding Device="Key" Code="65" Trigger="Down" Negate="true" Scale="1" Deadzone="0" AxisComponent="X"/>
+        <Binding Device="Key" Code="87" Trigger="Down" Negate="false" Scale="1" Deadzone="0" AxisComponent="Y"/>
+        <Binding Device="Key" Code="83" Trigger="Down" Negate="true" Scale="1" Deadzone="0" AxisComponent="Y"/>
+        <Binding Device="GamepadAxis" Code="0" Trigger="Down" Negate="false" Scale="1" Deadzone="0.2" AxisComponent="X"/>
+        <Binding Device="GamepadAxis" Code="1" Trigger="Down" Negate="true" Scale="1" Deadzone="0.2" AxisComponent="Y"/>
+    </Action>
+    <Action Name="Attack" ValueType="Digital">
+        <Binding Device="Key" Code="32" Trigger="Pressed" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+        <Binding Device="GamepadButton" Code="0" Trigger="Pressed" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+    </Action>
+    <Action Name="Roll" ValueType="Digital">
+        <Binding Device="Key" Code="340" Trigger="Pressed" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+        <Binding Device="GamepadButton" Code="1" Trigger="Pressed" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+    </Action>
+    <Action Name="Interact" ValueType="Digital">
+        <Binding Device="Key" Code="69" Trigger="Pressed" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+        <Binding Device="GamepadButton" Code="2" Trigger="Pressed" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+    </Action>
+    <Action Name="Pause" ValueType="Digital">
+        <Binding Device="Key" Code="256" Trigger="Pressed" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+        <Binding Device="GamepadButton" Code="7" Trigger="Pressed" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+    </Action>
+</InputMappings>

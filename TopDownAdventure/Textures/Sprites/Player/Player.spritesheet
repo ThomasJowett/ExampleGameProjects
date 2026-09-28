@@ -1,0 +1,21 @@
+<SpriteSheet EngineVersion="1" SpriteWidth="96" SpriteHeight="80">
+    <Texture Filepath="Textures/Sprites/Player/PlayerAtlas.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Idle_Down" StartFrame="0" FrameCount="8" HoldTime="0.15"/>
+    <Animation Name="Idle_Up" StartFrame="8" FrameCount="8" HoldTime="0.15"/>
+    <Animation Name="Idle_Left" StartFrame="16" FrameCount="8" HoldTime="0.15"/>
+    <Animation Name="Idle_Right" StartFrame="24" FrameCount="8" HoldTime="0.15"/>
+    <Animation Name="Run_Down" StartFrame="32" FrameCount="8" HoldTime="0.09"/>
+    <Animation Name="Run_Up" StartFrame="40" FrameCount="8" HoldTime="0.09"/>
+    <Animation Name="Run_Left" StartFrame="48" FrameCount="8" HoldTime="0.09"/>
+    <Animation Name="Run_Right" StartFrame="56" FrameCount="8" HoldTime="0.09"/>
+    <Animation Name="Attack1_Down" StartFrame="64" FrameCount="8" HoldTime="0.055"/>
+    <Animation Name="Attack1_Up" StartFrame="72" FrameCount="8" HoldTime="0.055"/>
+    <Animation Name="Attack1_Left" StartFrame="80" FrameCount="8" HoldTime="0.055"/>
+    <Animation Name="Attack1_Right" StartFrame="88" FrameCount="8" HoldTime="0.055"/>
+    <Animation Name="Attack2_Down" StartFrame="96" FrameCount="8" HoldTime="0.055"/>
+    <Animation Name="Attack2_Up" StartFrame="104" FrameCount="8" HoldTime="0.055"/>
+    <Animation Name="Attack2_Left" StartFrame="112" FrameCount="8" HoldTime="0.055"/>
+    <Animation Name="Attack2_Right" StartFrame="120" FrameCount="8" HoldTime="0.055"/>
+    <Animation Name="Hurt" StartFrame="0" FrameCount="8" HoldTime="0.15"/>
+    <Animation Name="Dead" StartFrame="0" FrameCount="8" HoldTime="0.3"/>
+</SpriteSheet>

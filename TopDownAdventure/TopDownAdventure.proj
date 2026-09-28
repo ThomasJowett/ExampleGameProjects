@@ -1,0 +1,5 @@
+<Project EngineVersion="1">
+    <DefaultScene Filepath="Scenes/Main.scene"/>
+    <Description></Description>
+    <SpriteAtlasPageSize>2048</SpriteAtlasPageSize>
+</Project>

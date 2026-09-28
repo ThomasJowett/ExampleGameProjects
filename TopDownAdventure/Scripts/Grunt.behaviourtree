@@ -1,0 +1,22 @@
+<BehaviourTree EngineVersion="1">
+    <Blackboard>
+        <Bool Key="Dead" Value="false"/>
+        <Bool Key="Hurt" Value="false"/>
+    </Blackboard>
+    <Root x="325" y="0">
+        <Sequence x="325" y="140">
+            <CustomTask Filepath="Scripts/AI/GruntAliveCheck.lua" x="0" y="280"/>
+            <Selector x="650" y="280">
+                <Sequence x="300" y="420">
+                    <CustomTask Filepath="Scripts/AI/GruntCanAttack.lua" x="200" y="560"/>
+                    <CustomTask Filepath="Scripts/AI/GruntAttack.lua" x="400" y="560"/>
+                </Sequence>
+                <Sequence x="700" y="420">
+                    <CustomTask Filepath="Scripts/AI/GruntCanChase.lua" x="600" y="560"/>
+                    <CustomTask Filepath="Scripts/AI/GruntChase.lua" x="800" y="560"/>
+                </Sequence>
+                <CustomTask Filepath="Scripts/AI/GruntWander.lua" x="1000" y="420"/>
+            </Selector>
+        </Sequence>
+    </Root>
+</BehaviourTree>
