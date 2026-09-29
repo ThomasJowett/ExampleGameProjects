@@ -22,7 +22,7 @@ local STATE_ANIM_PREFIX = {
 	Idle = "Idle",
 	Walk = "Run",
 	Attack = "Attack1",
-	Roll = "Run",
+	Roll = "Dash",
 }
 
 local FACING_OFFSET = {
@@ -62,9 +62,9 @@ end
 
 local function setAnimation()
 	if state == "Hurt" then
-		sprite.Animation = "Hurt"
+		sprite.Animation = "Hurt_" .. facing
 	elseif state == "Dead" then
-		sprite.Animation = "Dead"
+		sprite.Animation = "Death"
 	else
 		sprite.Animation = STATE_ANIM_PREFIX[state] .. "_" .. facing
 	end
