@@ -9,7 +9,13 @@
             <Selector x="650" y="280">
                 <Sequence x="300" y="420">
                     <CustomTask Filepath="Scripts/AI/GruntCanAttack.lua" x="200" y="560"/>
-                    <CustomTask Filepath="Scripts/AI/GruntAttack.lua" x="400" y="560"/>
+                    <Sequence x="400" y="560">
+                        <Wait WaitTime="0.18"/>
+                        <EmitSignal Signal="GruntAttackActive"/>
+                        <Wait WaitTime="0.16"/>
+                        <EmitSignal Signal="GruntAttackEnd"/>
+                        <Wait WaitTime="0.28"/>
+                    </Sequence>
                 </Sequence>
                 <Sequence x="700" y="420">
                     <CustomTask Filepath="Scripts/AI/GruntCanChase.lua" x="600" y="560"/>
