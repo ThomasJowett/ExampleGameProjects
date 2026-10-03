@@ -1,0 +1,27 @@
+<SpriteSheet EngineVersion="1" SpriteWidth="48" SpriteHeight="48">
+    <Texture Filepath="Textures/Sprites/Enemies/SkeletonWithBow.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Hurt_Up" StartFrame="44" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Hurt_Left" StartFrame="32" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Hurt_Right" StartFrame="20" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Leap_Up" StartFrame="228" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Death_Up" StartFrame="180" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Hurt_Down" StartFrame="8" FrameCount="4" HoldTime="0.1"/>
+    <Animation Name="Death_Left" StartFrame="168" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Leap_Right" StartFrame="204" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Death_Down" StartFrame="144" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Leap_Down" StartFrame="192" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Idle_Down" StartFrame="0" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Attack_Up" StartFrame="132" FrameCount="12" HoldTime="0.1"/>
+    <Animation Name="Death_Right" StartFrame="156" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Attack_Down" StartFrame="96" FrameCount="12" HoldTime="0.1"/>
+    <Animation Name="Run_Up" StartFrame="84" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Attack_Right" StartFrame="108" FrameCount="12" HoldTime="0.1"/>
+    <Animation Name="Idle_Right" StartFrame="12" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Run_Left" StartFrame="72" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Attack_Left" StartFrame="120" FrameCount="12" HoldTime="0.1"/>
+    <Animation Name="Run_Right" StartFrame="60" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Run_Down" StartFrame="48" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Idle_Left" StartFrame="24" FrameCount="6" HoldTime="0.1"/>
+    <Animation Name="Leap_Left" StartFrame="216" FrameCount="8" HoldTime="0.1"/>
+    <Animation Name="Idle_Up" StartFrame="36" FrameCount="6" HoldTime="0.1"/>
+</SpriteSheet>
