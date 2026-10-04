@@ -1,0 +1,4 @@
+<SpriteSheet EngineVersion="1" SpriteWidth="32" SpriteHeight="32">
+    <Texture Filepath="Textures/HUD/Heart-hurt.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Hurt" StartFrame="0" FrameCount="5" HoldTime="0.1"/>
+</SpriteSheet>
