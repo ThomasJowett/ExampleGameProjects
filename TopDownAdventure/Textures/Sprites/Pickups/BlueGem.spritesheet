@@ -1,0 +1,4 @@
+<SpriteSheet EngineVersion="1" SpriteWidth="16" SpriteHeight="16">
+    <Texture Filepath="Textures/Sprites/Pickups/BlueGem.png" FilterMethod="1" WrapMethod="2"/>
+    <Animation Name="Shine" StartFrame="0" FrameCount="9" HoldTime="0.1"/>
+</SpriteSheet>
