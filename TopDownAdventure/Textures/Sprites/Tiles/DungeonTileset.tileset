@@ -1,0 +1,12 @@
+<Tileset EngineVersion="1" TileWidth="32" TileHeight="32">
+    <Texture Filepath="Textures/Sprites/Tiles/DungeonTileset.png" FilterMethod="1" WrapMethod="2"/>
+    <Tile Id="84" Probability="0.80000001192092896" Shape="0"/>
+    <Tile Id="85" Probability="0.10000000149011612" Shape="0"/>
+    <Tile Id="86" Probability="0.10000000149011612" Shape="0"/>
+    <Tile Id="105" Probability="0.80000001192092896" Shape="0"/>
+    <Tile Id="106" Probability="0.10000000149011612" Shape="0"/>
+    <Tile Id="107" Probability="0.10000000149011612" Shape="0"/>
+    <Tile Id="126" Probability="0.8399999737739563" Shape="0"/>
+    <Tile Id="127" Probability="0.10000000149011612" Shape="0"/>
+    <Tile Id="128" Probability="0.059999998658895493" Shape="0"/>
+</Tileset>
