@@ -11,7 +11,7 @@ function OnCreate()
 	camera = CurrentScene:GetPrimaryCamera():GetCameraComponent()
 	plane = CurrentEntity:GetPrimitiveComponent()
 	collider = CurrentEntity:GetBoxCollider2DComponent()
-	collider.Size.x = camera.Camera:GetOrthoSize() / 2
+	collider.Size = Vec2.new(camera.Camera:GetOrthoSize() / 2, collider.Size.y)
 	transform = CurrentEntity:GetTransformComponent()
 	material = plane.Material
 end

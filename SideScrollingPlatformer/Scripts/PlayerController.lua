@@ -56,10 +56,11 @@ function OnFixedUpdate()
 		Signal.Emit("player_jump", CurrentEntity, {})
 	end 
 	
-	if(rigidBodyComp:GetLinearVelocity().x > 0.0001) then
-		transformComp.Scale.x = math.abs(transformComp.Scale.x)
-	elseif(rigidBodyComp:GetLinearVelocity().x < -0.0001) then
-		transformComp.Scale.x = -math.abs(transformComp.Scale.x)
+	local velocityX = rigidBodyComp:GetLinearVelocity().x
+	if velocityX > 0.0001 or velocityX < -0.0001 then
+		local scale = transformComp.Scale
+		local newScaleX = velocityX > 0.0001 and math.abs(scale.x) or -math.abs(scale.x)
+		transformComp.Scale = Vec3.new(newScaleX, scale.y, scale.z)
 	end
 	
 	if jumpTimeout > 0 then

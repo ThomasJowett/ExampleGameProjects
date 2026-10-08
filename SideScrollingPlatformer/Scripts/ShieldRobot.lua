@@ -32,7 +32,8 @@ function OnFixedUpdate()
 	if(count > 700) then
 		count = 0
 		backwards = not backwards
-		transform.Scale.x = -transform.Scale.x
+		local scale = transform.Scale
+		transform.Scale = Vec3.new(-scale.x, scale.y, scale.z)
 		sprite.Animation = "Walk"
 		attacking = false
 	else

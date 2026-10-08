@@ -40,11 +40,14 @@ function OnFixedUpdate()
 	local targetX = player.Position.x
 	local targetY = player.Position.y
 
-	transform.Position.x = Lerp(transform.Position.x, targetX, smoothing)
-	transform.Position.y = Lerp(transform.Position.y, targetY, smoothing)
+	local pos = transform.Position
+	local newX = Lerp(pos.x, targetX, smoothing)
+	local newY = Lerp(pos.y, targetY, smoothing)
 
-	transform.Position.x = math.max(worldMinX + halfScreenWidth, math.min(worldMaxX - halfScreenWidth, transform.Position.x))
-	transform.Position.y = math.max(worldMinY + halfScreenHeight, math.min(worldMaxY - halfScreenHeight, transform.Position.y))
+	newX = math.max(worldMinX + halfScreenWidth, math.min(worldMaxX - halfScreenWidth, newX))
+	newY = math.max(worldMinY + halfScreenHeight, math.min(worldMaxY - halfScreenHeight, newY))
+
+	transform.Position = Vec3.new(newX, newY, pos.z)
 end
 -- Called when entity is destroyed
 function OnDestroy()

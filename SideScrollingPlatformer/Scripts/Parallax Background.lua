@@ -33,8 +33,8 @@ function OnCreate()
 	end
 
 	local backgrounds_transform = CurrentEntity:GetTransformComponent()
-	backgrounds_transform.Position.x = camera.Position.x
-	backgrounds_transform.Position.y = camera.Position.y
+	local pos = backgrounds_transform.Position
+	backgrounds_transform.Position = Vec3.new(camera.Position.x, camera.Position.y, pos.z)
 end
 
 -- Called once per frame
@@ -58,9 +58,8 @@ function OnFixedUpdate()
 	local camY = camera.Position.y
 
 	local backgrounds_transform = CurrentEntity:GetTransformComponent()
-
-	backgrounds_transform.Position.x = camX
-	backgrounds_transform.Position.y = camY
+	local pos = backgrounds_transform.Position
+	backgrounds_transform.Position = Vec3.new(camX, camY, pos.z)
 
 	for _, layer in ipairs(parallaxLayers) do
 		local offsetX = camX * (layer.scrollFactor) * 0.01
