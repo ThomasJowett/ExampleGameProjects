@@ -6,6 +6,6 @@
     <Action Name="Move" ValueType="Axis1D">
         <Binding Device="Key" Code="65" Trigger="Down" Negate="true" Scale="1" Deadzone="0" AxisComponent="X"/>
         <Binding Device="Key" Code="68" Trigger="Down" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
-        <Binding Device="GamepadAxis" Code="0" Trigger="Down" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+        <Binding Device="GamepadAxis" Code="0" Trigger="Down" Negate="false" Scale="1" Deadzone="0.1" AxisComponent="X"/>
     </Action>
 </InputMappings>
