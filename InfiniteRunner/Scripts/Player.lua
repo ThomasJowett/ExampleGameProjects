@@ -19,7 +19,7 @@ function OnUpdate(deltaTime)
 
 	local velocity = rigidBody:GetLinearVelocity()
 
-	if velocity.y == 0.0 and Input.IsKeyPressed(" ") then
+	if velocity.y == 0.0 and InputAction.Jump:IsTriggered() then
 		local xTransform = transform.Position.x
 		local forward = 0.0
 		if transform.Position.x < 0.0 then

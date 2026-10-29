@@ -1,4 +1,4 @@
-<SpriteAtlas EngineVersion="1" PageSize="256">
+<SpriteAtlas EngineVersion="2" PageSize="256">
     <Page Index="0" File="Page0.png"/>
     <Region Path="Sprites/desk-3.png" Page="0" X="78" Y="2" W="26" H="8" MTime="133096476448839128" Size="15564"/>
     <Region Path="Sprites/chair.png" Page="0" X="2" Y="2" W="8" H="15" MTime="133096475188186076" Size="15506"/>

@@ -1,0 +1,6 @@
+<InputMappings>
+    <Action Name="Jump" ValueType="Digital">
+        <Binding Device="Key" Code="32" Trigger="Down" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+        <Binding Device="MouseButton" Code="0" Trigger="Down" Negate="false" Scale="1" Deadzone="0" AxisComponent="X"/>
+    </Action>
+</InputMappings>
