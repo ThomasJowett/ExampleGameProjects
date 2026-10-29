@@ -1,6 +1,6 @@
 # Example Game Projects
 
-Companion projects for the [Cross-Platform Game Engine](https://github.com/ThomasJowett/Cross-Platform-Game-Engine)
+Companion projects for the [Attercop Engine](https://github.com/ThomasJowett/AttercopEngine)
 — each one is a complete, playable project folder (a `.proj` file, scenes, scripts, and
 assets) that exercises a different slice of the engine, from 2D physics and animation to
 UI, audio, and pure scripting.
