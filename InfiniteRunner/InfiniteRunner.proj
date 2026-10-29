@@ -1,5 +1,5 @@
-<Project EngineVersion="1">
+<Project EngineVersion="2">
     <DefaultScene Filepath="Scenes/Main.scene"/>
     <Description>2D Infinite Runner</Description>
-    <SpriteAtlasPageSize>2048</SpriteAtlasPageSize>
+    <SpriteAtlasPageSize>256</SpriteAtlasPageSize>
 </Project>
