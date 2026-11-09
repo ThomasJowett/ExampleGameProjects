@@ -17,13 +17,14 @@ function OnCreate()
 	obstacles[5] = LoadScene("Scenes/Zombie.scene")
 	obstacles[6] = LoadScene("Scenes/Dresser.scene")
 	obstacles[7] = LoadScene("Scenes/Trash.scene")
+	obstacles[8] = LoadScene("Scenes/Couch.scene")
 end
 
 -- Called once per frame
 function OnUpdate(deltaTime)
 	timer = timer + deltaTime;
 	if timer > interval then
-		local index = math.random(0, 7)
+		local index = math.random(0, 8)
 		CurrentScene:InstantiateScene(obstacles[index], spawnLocation)
 		timer = 0.0
 		interval = math.random(1.0, 2.0)
